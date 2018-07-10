@@ -1,0 +1,61 @@
+
+/* Components */
+body {
+	width: 90%;
+	height: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+header {
+	position: fixed;
+	width: inherit;
+	padding-top: 5px;
+}
+
+footer {
+	/* position: absolute;
+	bottom: 0; */
+	width: 100%;
+	padding-top: 75px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+/* General background color */
+.backcolor {
+	background: #f8f9fa;
+}
+
+/* Icons */
+.smallicon {
+	width: 32px;
+	height: 32px;
+}
+
+.mediumicon {
+	width: 64px;
+	height: 64px;
+}
+
+.bigicon {
+	width: 128px;
+	height: 128px;
+}
+
+/* Images */
+.heroimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Text */
+.textcenter {
+	text-align: center;
+}
+
+/* Spacing */
+.paragraphspacing {
+	padding-top: 50px;
+}

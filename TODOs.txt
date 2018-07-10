@@ -1,0 +1,29 @@
+
+---[ TODOs ]---
+
+[header]
+	header logo ?
+	css on hover
+	icons instead of text on the right
+	tooltips
+	header responsive resize not good for mobile
+
+[index]
+	set header properly
+
+[bio]
+	set header properly
+	general info
+		hero img
+		cards
+		vertical divider
+	jobs timeline
+	skills
+		chips ?
+		bars ?
+	downloads (cv, cover letter, motivation letter)
+
+[projects]
+	set header properly
+	list of projects (with icons) ?
+	last github activities ?

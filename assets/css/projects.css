@@ -1,0 +1,12 @@
+
+/* Body content */
+.bodycontent {
+	padding-top: 100px;
+	width: 70%;
+	min-height: 100%;
+}
+
+/* GitHub feeds vs Spectre */
+.githubfeeds {
+	box-sizing: unset;
+}

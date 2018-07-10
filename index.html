@@ -5,31 +5,47 @@
 	<head>
 		<title>Matteo Baiguini's Home</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+		<!-- <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"> -->
+		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+		<link rel="stylesheet" href="assets/css/general.css">
+		<link rel="stylesheet" href="assets/css/index.css">
 	</head>
 
-	<body>
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="docs/resume.pdf">CV</a></li>
-			</ul>
-		</nav>
+	<body class="backcolor">
+		
+		<header id="header" class="navbar backcolor">
+			<section id="navbar-section-left" class="navbar-section">
+				<a href="index.html" class="btn btn-link"><span class="label label-rounded label-primary">Home</span></a>
+				<a href="bio.html" class="btn btn-link"><span class="label label-rounded label-secondary">Bio</span></a>
+				<a href="projects.html" class="btn btn-link"><span class="label label-rounded label-secondary">Projects</span></a>
+			</section>
+			<section id="navbar-section-right" class="navbar-section">
+				<a href="mailto:matteo@solidarchitectures.com" class="btn btn-link">Email</a>
+				<a href="https://github.com/bygui86" class="btn btn-link">GitHub</a>
+				<a href="https://www.linkedin.com/in/matteobaiguini/" class="btn btn-link">LinkedIn</a>
+				<a href="https://www.xing.com/profile/Matteo_Baiguini/cv" class="btn btn-link">Xing</a>
+			</section>
+		</header>
 
-		<div class="container">
-			<h1>Hi everyone :) I'm Matteo Baiguini</h1>
-			<img style="width: 100%" alt="Picture" src="assets/img/profile-picture_big.jpg">
+		<div id="content" class="container bodycontent">
+			<img id="content-solid-logo" class="img-responsive img-fit-contain rounded heroimg" 
+				src="assets/img/mb-solid_logo-2.png" alt="MB SOLID consulting">
+
+			<div id="content-cite" class="textcenter paragraphspacing">
+				<p>Make the impossible possible, make the possible easy, make the easy elegant.</p>
+				<cite>~ Dr Moshe Feldenkrais</cite>
+			</div>
 		</div>
 
-		<footer>
-			<ul>
-				<li><a href="https://github.com/bygui86">GitHub</a></li>
-				<li><a href="https://www.linkedin.com/in/matteobaiguini/">LinkedIn profile</a></li>
-				<li><a href="https://www.xing.com/profile/Matteo_Baiguini/cv">Xing profile</a></li>
-				<li><a href="mailto:matteo@solidarchitectures.com">Email me</a></li>
-			</ul>
+		<footer id="footer" class="footer">
+			Designed and built with <span class="text-error">♥</span> by Matteo Baiguini.
+			<br>
+			Licensed under the <a href="LICENSE" target="_blank">MIT License</a>.
 		</footer>
 
-		<!-- <script type="text/javascript" src=".."></script> -->
 	</body>
 
 </html>

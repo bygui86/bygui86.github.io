@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Matteo Baiguini's Projects</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+		<!-- <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"> -->
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" >
+		<link rel="stylesheet" href="assets/github-activity/github-activity_0.1.5-custom.min.css">
+
+		<link rel="stylesheet" href="assets/css/general.css">
+		<link rel="stylesheet" href="assets/css/projects.css">
+	</head>
+
+	<body class="backcolor">
+
+		<header id="header" class="navbar backcolor">
+			<section id="navbar-section-left" class="navbar-section">
+				<a href="index.html" class="btn btn-link"><span class="label label-rounded label-secondary">Home</span></a>
+				<a href="bio.html" class="btn btn-link"><span class="label label-rounded label-secondary">Bio</span></a>
+				<a href="projects.html" class="btn btn-link"><span class="label label-rounded label-primary">Projects</span></a>
+			</section>
+			<section id="navbar-center" class="navbar-center">
+				<img id="logo" class="mediumicon" src="assets/img/mb-solid_logo-1.png" alt="MB SOLID consulting">
+			</section>
+			<section id="navbar-section-right" class="navbar-section">
+				<a href="mailto:matteo@solidarchitectures.com" class="btn btn-link">Email</a>
+				<a href="https://github.com/bygui86" class="btn btn-link">GitHub</a>
+				<a href="https://www.linkedin.com/in/matteobaiguini/" class="btn btn-link">LinkedIn</a>
+				<a href="https://www.xing.com/profile/Matteo_Baiguini/cv" class="btn btn-link">Xing</a>
+			</section>
+		</header>
+	
+		<div id="content" class="container bodycontent">
+
+			<!-- <h2>Open source projects</h2> -->
+			<!-- WORK IN PROGRESS: get all public projects from github -->
+
+			<h2>Last activities</h2>
+			<div id="content-github-feed" class="githubfeeds"></div>
+		</div>
+
+		<footer id="footer" class="footer textcenter">
+			Designed and built with <span class="text-error">♥</span> by Matteo Baiguini.
+			<br>
+			Licensed under the <a href="LICENSE" target="_blank">MIT License</a>.
+		</footer>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+		<script type="text/javascript" src="assets/github-activity/github-activity_0.1.5-custom.min.js"></script>
+		<script>
+			GitHubActivity.feed({
+				username: "bygui86",
+				// repository: "repository", // optional
+				selector: "#content-github-feed",
+				limit: 10 // optional
+			});
+		</script>
+
+	</body>
+
+</html>

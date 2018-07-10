@@ -1,0 +1,29 @@
+
+---[ links ]---
+
+
+### TOOLS
+[minifier]
+	https://www.minifier.org/
+
+
+### CSS
+[frameworks]
+	https://picturepan2.github.io/spectre/getting-started.html#introduction
+	[alternatives]
+		https://purecss.io/forms/
+		https://bulma.io/documentation/overview/start/
+[on hover]
+	https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp
+[shadow on hover]
+	https://www.w3schools.com/howto/howto_css_pricing_table.asp
+[timeline]
+	https://www.w3schools.com/howto/howto_css_timeline.asp
+[hero image]
+	https://www.w3schools.com/howto/howto_css_hero_image.asp
+[skill-bar]
+	https://www.w3schools.com/howto/howto_css_skill_bar.asp
+
+
+### GITHUB
+	https://github.com/caseyscarborough/github-activity
