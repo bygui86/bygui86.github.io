@@ -1,29 +1,29 @@
 
 ---[ TODOs ]---
 
+[last-not-least]
+	add shadow on elements (where makes sense)
+	favicon
+	download all possible css and js to reduce loading time and calls
+	tidy up css and js
+	minify all css and js
+
 [header]
-	header logo ?
-	css on hover
-	icons instead of text on the right
-	tooltips
 	header responsive resize not good for mobile
+	review position of objects with spectre framework ?
 
 [index]
 	set header properly
 
 [bio]
 	set header properly
-	general info
-		hero img
-		cards
-		vertical divider
-	jobs timeline
 	skills
 		chips ?
 		bars ?
-	downloads (cv, cover letter, motivation letter)
+	download buttons (cv, cover letter, motivation letter)
 
-[projects]
+[activites]
 	set header properly
-	list of projects (with icons) ?
-	last github activities ?
+	list of projects (with icons ? spring, spring-cloud, docker, javascript, java, )
+	spectre-loading while loading info from github
+	font colors
