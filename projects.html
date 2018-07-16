@@ -10,11 +10,12 @@
 		<!-- <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"> -->
 		
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" >
-		<link rel="stylesheet" href="assets/github-activity/github-activity_0.1.5-custom.min.css">
+		<link rel="stylesheet" href="assets/github/github-activity/github-activity_0.1.5-custom.css">
 
 		<link rel="stylesheet" href="assets/css/general.css">
-		<link rel="stylesheet" href="assets/css/projects.css">
+		<link rel="stylesheet" href="assets/css/projects-activities.css">
+		<link rel="stylesheet" href="assets/github/github-repositories/github-accordion_0.0.1.css">
+		<!-- <link rel="stylesheet" href="assets/github/github-repositories/github-accordion_0.0.1.min.css"> -->
 	</head>
 
 	<body class="backcolor">
@@ -23,6 +24,7 @@
 			<section id="navbar-section-left" class="navbar-section">
 				<a href="index.html" class="btn btn-link"><span class="label label-rounded label-secondary">Home</span></a>
 				<a href="bio.html" class="btn btn-link"><span class="label label-rounded label-secondary">Bio</span></a>
+				<a href="activities.html" class="btn btn-link"><span class="label label-rounded label-secondary">Last activities</span></a>
 				<a href="projects.html" class="btn btn-link"><span class="label label-rounded label-primary">Projects</span></a>
 			</section>
 			<section id="navbar-center" class="navbar-center">
@@ -37,12 +39,16 @@
 		</header>
 	
 		<div id="content" class="container bodycontent">
+			<div id="content-github-projects">
+				<h2>My projects</h2>
+				<div id="content-github-my-projects" class="gha-feed"></div>
+				
+				<!-- TODO: add spacing 50px before and after -->
+				<div class="divider"></div>
 
-			<!-- <h2>Open source projects</h2> -->
-			<!-- WORK IN PROGRESS: get all public projects from github -->
-
-			<h2>Last activities</h2>
-			<div id="content-github-feed" class="githubfeeds"></div>
+				<h2>Forked projects</h2>
+				<div id="content-github-forked-projects" class="gha-feed"></div>
+			</div>
 		</div>
 
 		<footer id="footer" class="footer textcenter">
@@ -51,14 +57,13 @@
 			Licensed under the <a href="LICENSE" target="_blank">MIT License</a>.
 		</footer>
 
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-		<script type="text/javascript" src="assets/github-activity/github-activity_0.1.5-custom.min.js"></script>
-		<script>
-			GitHubActivity.feed({
-				username: "bygui86",
-				// repository: "repository", // optional
-				selector: "#content-github-feed",
-				limit: 10 // optional
+		<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
+		<!-- <script type="text/javascript" src="assets/github/github-repositories/github-repositories_0.0.1.js"></script> -->
+		<script type="text/javascript" src="assets/github/github-repositories/github-repositories_0.0.2.js"></script>
+		<!-- <script type="text/javascript" src="assets/github/github-repositories/github-repositories_0.0.2.min.js"></script> -->
+		<script type="text/javascript">
+			$(function() {
+				$("#content-github-projects").loadGitHubRepositories("bygui86");
 			});
 		</script>
 

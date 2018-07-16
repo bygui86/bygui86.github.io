@@ -1,11 +1,3 @@
-/*!
- * GitHub Activity Stream - v0.1.5 - 10/7/2015
- * https://github.com/caseyscarborough/github-activity
- *
- * Copyright (c) 2015 Casey Scarborough
- * MIT License
- * http://opensource.org/licenses/MIT
- */
 
 var GitHubActivity = (function() {
   'use strict';
@@ -148,7 +140,7 @@ var GitHubActivity = (function() {
     },
     getHeaderHTML: function(data) {
       if (data.name) {
-        data.userNameLink = methods.renderLink(data.html_url, data.name);
+        data.userNameLink = data.name;
       } else {
         data.withoutName = ' without-name';
       }
@@ -195,7 +187,6 @@ var GitHubActivity = (function() {
     },
     renderStream: function(output, div) {
       div.innerHTML = Mustache.render(templates.Stream, { text: output, footer: templates.Footer });
-      div.style.position = 'relative';
     },
     writeOutput: function(selector, content) {
       var div = selector.charAt(0) === '#' ? document.getElementById(selector.substring(1)) : document.getElementsByClassName(selector.substring(1));
