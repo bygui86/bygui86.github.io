@@ -10,3 +10,7 @@
 .githubfeeds {
 	box-sizing: unset;
 }
+
+.projicon {
+	width: 32px;
+}

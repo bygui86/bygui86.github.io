@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Matteo Baiguini's Last activities</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+		<!-- <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"> -->
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" >
+		<link rel="stylesheet" href="assets/github/github-activity/github-activity_0.1.5-custom.css">
+		<!-- <link rel="stylesheet" href="assets/github/github-activity/github-activity_0.1.5-custom.min.css"> -->
+
+		<link rel="stylesheet" href="assets/css/general.css">
+		<link rel="stylesheet" href="assets/css/projects-activities.css">
+	</head>
+
+	<body class="backcolor">
+
+		<header id="header" class="navbar backcolor">
+			<section id="navbar-section-left" class="navbar-section">
+				<a id="header-left-home" href="index.html" class="btn btn-link">
+					<span class="header-label header-label-rounded header-label-secondary header-hover">home</span>
+				</a>
+				<a id="header-left-bio" href="bio.html" class="btn btn-link">
+					<span class="header-label header-label-rounded header-label-secondary header-hover">bio</span>
+				</a>
+				<a id="header-left-activities" href="activities.html" class="btn btn-link">
+					<span class="label label-rounded label-primary">activities</span>
+				</a>
+			</section>
+			<section id="navbar-center" class="navbar-center">
+				<img id="logo" class="mediumicon" src="assets/img/mb-solid_logo-1.png" alt="MB SOLID consulting">
+			</section>
+			<section id="navbar-section-right" class="navbar-section">
+				<a id="header-right-email-link" href="mailto:matteo@solidarchitectures.com" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="email">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/email-1.png">
+				</a>
+				<a id="header-right-github-link" href="https://github.com/bygui86" target="_blank" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="github">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/github-1.png" alt="github">
+				</a>
+				<a id="header-right-linkedin-link" href="https://www.linkedin.com/in/matteobaiguini/" target="_blank" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="linkedin">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/linkedin-2.png" alt="linkedin">
+				</a>
+				<a id="header-right-xing-link" href="https://www.xing.com/profile/Matteo_Baiguini/cv" target="_blank" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="xing">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/xing-3.png" alt="xing">
+				</a>
+			</section>
+		</header>
+
+	
+		<div id="content" class="container bodycontent">
+			<!-- https://api.github.com/users/bygui86/events?per_page=N -->
+			<div id="content-github-feeds" class="githubfeeds"></div>
+
+			<div class="divider"></div>
+
+			<!-- my projects -->
+
+			<div class="divider"></div>
+
+			<!-- forked projects -->
+		</div>
+
+		<footer id="footer" class="footer">
+			<div id="footer-powered">Powered by 
+				<a href="https://picturepan2.github.io/spectre/" target="_blank">
+					<img id="footer-spectre-logo" class="vertical-middle" 
+						src="assets/img/spectre-logo.svg" alt="Spectre">
+				</a>
+			</div>
+			<div id="footer-license">Licensed under the <a id="footer-license" href="LICENSE" target="_blank">MIT License</a></div>
+		</footer>
+	
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+		<script type="text/javascript" src="assets/github/github-activity/github-activity_0.1.5-custom.js"></script>
+		<!-- <script type="text/javascript" src="assets/github/github-activity/github-activity_0.1.5-custom.min.js"></script> -->
+		<script>
+			GitHubActivity.feed({
+				username: "bygui86",
+				// repository: "repository", // optional
+				selector: "#content-github-feeds",
+				limit: 10 // optional
+			});
+		</script>
+
+	</body>
+
+</html>
