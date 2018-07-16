@@ -8,7 +8,6 @@
 
 		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-		<!-- <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"> -->
 
 		<link rel="stylesheet" href="assets/css/general.css">
 		<link rel="stylesheet" href="assets/css/bio.css">
@@ -18,60 +17,296 @@
 		
 		<header id="header" class="navbar backcolor">
 			<section id="navbar-section-left" class="navbar-section">
-				<a href="index.html" class="btn btn-link"><span class="label label-rounded label-secondary">Home</span></a>
-				<a href="bio.html" class="btn btn-link"><span class="label label-rounded label-primary">Bio</span></a>
-				<a href="projects.html" class="btn btn-link"><span class="label label-rounded label-secondary">Projects</span></a>
+				<a id="header-left-home" href="index.html" class="btn btn-link">
+					<span class="header-label header-label-rounded header-label-secondary header-hover">home</span>
+				</a>
+				<a id="header-left-bio" href="bio.html" class="btn btn-link">
+					<span class="label label-rounded label-primary">bio</span>
+				</a>
+				<a id="header-left-activities" href="activities.html" class="btn btn-link">
+					<span class="header-label header-label-rounded header-label-secondary header-hover">activities</span>
+				</a>
 			</section>
 			<section id="navbar-center" class="navbar-center">
 				<img id="logo" class="mediumicon" src="assets/img/mb-solid_logo-1.png" alt="MB SOLID consulting">
 			</section>
 			<section id="navbar-section-right" class="navbar-section">
-				<a href="mailto:matteo@solidarchitectures.com" class="btn btn-link">Email</a>
-				<a href="https://github.com/bygui86" class="btn btn-link">GitHub</a>
-				<a href="https://www.linkedin.com/in/matteobaiguini/" class="btn btn-link">LinkedIn</a>
-				<a href="https://www.xing.com/profile/Matteo_Baiguini/cv" class="btn btn-link">Xing</a>
+				<a id="header-right-email-link" href="mailto:matteo@solidarchitectures.com" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="email">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/email-1.png">
+				</a>
+				<a id="header-right-github-link" href="https://github.com/bygui86" target="_blank" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="github">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/github-1.png" alt="github">
+				</a>
+				<a id="header-right-linkedin-link" href="https://www.linkedin.com/in/matteobaiguini/" target="_blank" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="linkedin">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/linkedin-2.png" alt="linkedin">
+				</a>
+				<a id="header-right-xing-link" href="https://www.xing.com/profile/Matteo_Baiguini/cv" target="_blank" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="xing">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/xing-3.png" alt="xing">
+				</a>
 			</section>
 		</header>
-	
+
 		<div id="content" class="container bodycontent">
 
-			<img id="content-hero-img" class="img-responsive img-fit-contain rounded heroimg" src="assets/img/picture_big.jpg">
+			<img id="content-hero-img" class="img-responsive img-fit-contain rounded hero-img" src="assets/img/picture_big.jpg">
 			
-			<div id="content-paragraph" class="paragraphspacing">
+			<div id="content-motivation" class="top-spacing">
 				<p>"The technology is my passion", "I love to develop" and things like these can be said by anyone. But just few of them are really going deeper into a technology, to understand really how it does work.</p>
 				<p>This is how I am: analysing the requirements, searching the best technology to achieve the objective, studying and finally implementing a high-quality solution.</p>
 				<p>In my philosophy these steps are all equally important. If you don't understand the problem, you are not able to recognise the best technology to solve it. If you don't find the technology, the solution will be wrong and the quality poor.</p>
 				<p>Of course everything done in strong collaboration with all other team members, because every question and point of view is interesting and gives a bit of improvement.</p>
 				<p>Keeping this in mind, I am always available to learn something, to try alternative solutions, to suggest something different.</p>
 			</div>
+			
+			<div class="top-spacing">
+				<div class="divider"></div>
+			</div>
 
-			<!-- <div class="timeline">
-				<div class="timeline-item" id="timeline-example-1">
-					<div class="timeline-left">
-						<a class="timeline-icon" href="#timeline-example-1"></a>
+			<div id="content-resume" class="top-spacing">
+				<h3 class="text-center">Personal</h3>
+				<div id="content-resume-personal-info" class="columns bottom-spacing">
+					<div id="content-resume-personal-info-left" class="column text-right">
+						Nationality
+						<br>
+						Date of birth
+						<br>
+						E-mail
+						<br>
+						Area
+						<br>
+						Interests
 					</div>
-					<div class="timeline-content"> -->
-						<!-- tiles structure -->
-					<!-- </div>
-				</div>
-				
-				<div class="timeline-item" id="timeline-example-2">
-					<div class="timeline-left">
-						<a class="timeline-icon icon-lg" href="#timeline-example-2">
-							<i class="icon icon-check"></i>
-						</a>
+					<div class="divider-vert"></div>
+					<div id="content-resume-personal-info-right" class="column">
+						Italian
+						<br>
+						27th January 1986
+						<br>
+						matteo@solidarchitectures.com
+						<br>
+						Zurich, Switzerland
+						<br>
+						Photography, travel, cinema, sports, technologies
 					</div>
-					<div class="timeline-content"> -->
-						<!-- tiles structure -->
-					<!-- </div>
 				</div>
-			</div> -->
+
+				<h3 class="text-center">Experience</h3>
+				<div id="content-resume-experience" class="reduced-width item-center bottom-spacing">
+					<div class="timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon icon-lg"></div>
+							</div>
+							<div class="timeline-content">
+								<div class="tile">
+									<div class="tile-content">
+										<p class="tile-subtitle">Dec 2016 > Now</p>
+										<p class="tile-title">
+											foryouandyourcustomers AG | Zurich | Switzerland
+											<br>
+											<b>Software Architect and Developer</b>
+											<br>
+											I work in close contact with customers satisfying their business requirements and realizing new technical commerce solutions. I keep also myself up to date on new technologies such as new architectures (microservices) and containerization.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="timeline-content">
+								<div class="tile">
+									<div class="tile-content">
+										<p class="tile-subtitle">Oct 2015 > Nov 2016</p>
+										<p class="tile-title">
+											webtiser AG | Zurich | Switzerland
+											<br>
+											<b>Technical Team Leader</b>
+											<br>
+											My tasks go from approaching the most difficult issues in a project, identifying best technical and architectural solutions, being up-to-date on new hybris features and other technologies, up to mentoring and leading other developers.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="timeline-content">
+								<div class="tile">
+									<div class="tile-content">
+										<p class="tile-subtitle">Mar 2014 > Sep 2015</p>
+										<p class="tile-title">
+											A.S. Watson Group Europe | Milan | Italy
+											<br>
+											<b>hybris Senior Analyst and Developer</b>
+											<br>
+											My tasks go from approaching problems, identifying technical solutions, up to develop them.
+											<br>
+											I design and develop new complex features of project, starting from back-end arriving to expose functionalities on front-end. These features are both commercial and technical. I am also working on Index Engine optimization and deploying new releases.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="timeline-content">
+								<div class="tile">
+									<div class="tile-content">
+										<p class="tile-subtitle">Mar 2012 > Feb 2014</p>
+										<p class="tile-title">
+											Techedge Group S.p.A. | Milan | Italy
+											<br>
+											<b>hybris Consultant and Developer</b>
+											<br>
+											My tasks go from analyzing all the business requirements, up to the technical development of both the architectural system and the infrastructural one.
+											<br>
+											I work on both back-end and front-end sides, dealing with development of new modules for the communication with other third-party platforms, process management of checkout flow, catalog management and automation build process.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="text-center">Education</h3>
+				<div id="content-resume-education" class="reduced-width item-center bottom-spacing">
+					<div class="timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon icon-lg"></div>
+							</div>
+							<div class="timeline-content">
+								<div class="tile">
+									<div class="tile-content">
+										<p class="tile-subtitle">2009 > 2011</p>
+										<p class="tile-title">
+											Università degli Studi di Milano-Bicocca
+											<br>
+											<b></b>Master degree in Computer Science</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="timeline-content">
+								<div class="tile">
+									<div class="tile-content">
+										<p class="tile-subtitle">2005 > 2009</p>
+										<p class="tile-title">
+											Università degli Studi di Milano-Bicocca
+											<br>
+											<b>Bachelor degree in Computer Science</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="timeline-content">
+								<div class="tile">
+									<div class="tile-content">
+										<p class="tile-subtitle">2000 > 2005</p>
+										<p class="tile-title">
+											Liceo Scientifico M. G. Agnesi
+											<br>
+											<b>Scientific High School Diploma</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="text-center">Certifications</h3>
+				<div id="content-resume-certifications" class="reduced-width item-center text-center bottom-spacing">
+					hybris Core Platform V5 Certification
+					<br>
+					Preliminary English Test
+					<br>
+					Zertifikat Deutsch
+				</div>
+
+				<h3 class="text-center">Technology stack</h3>
+				TODO
+				<div id="content-resume-tech-stack" class="reduced-width item-center text-center bottom-spacing">
+					DDD | TDD | UML | eCommerce | Microservices Java/J2EE | SQL | NoSQL | XML | JSON | JSP/JSTL | Soap / REST | GraphQL | Shell scripting
+					Spring framework | Hybris | Build tools (Gradle, Maven, Ant) | Solr | Apache Kafka | Jenkins | Hibernate | Oracle DB | MySQL | Postgresql | MongoDB
+					Git | Docker | CI/CD
+					Eclipse | IntelliJ IDEA | Atlassian package
+				</div>
+
+				<h3 class="text-center">Soft skills</h3>
+				<div id="content-resume-soft-skills" class="reduced-width item-center bottom-spacing">
+					<p>Excellent willing and enthusiasm to know and explore new technologies.</p>
+					<p>Ability to relate effectively to colleagues and customers, to work in team, in environments where the communication is essential.</p>
+					<p>Organisational and managerial skills, not only professionally but also personally. Increased abilities to manage multiple tasks and persons.</p>
+					<p>Leadership and decision-making capacity in critical situations. Expertise in various fields of Computer Sciences: software design, development, reverse engineering, dev ops. These knowledges have been extended also in personal experience on different projects.</p>
+				</div>
+
+				<h3 class="text-center">Language skills</h3>
+				<div id="content-resume-lang-skills" class="reduced-width item-center bottom-spacing">
+					<table class="table table-striped text-center">
+						<thead>
+							<tr>
+								<th></th>
+								<th>verbal</th>
+								<th>written</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-bold">ITALIAN</td>
+								<td>mother tongue</td>
+								<td>mother tongue</td>
+							</tr>
+							<tr class="active">
+								<td class="text-bold">ENGLISH</td>
+								<td>professional user</td>
+								<td>professional user</td>
+							</tr>
+							<tr>
+								<td class="text-bold">GERMAN</td>
+								<td>professional user</td>
+								<td>professional user</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 		</div>
 
-		<footer id="footer" class="footer textcenter">
-			Designed and built with <span class="text-error">♥</span> by Matteo Baiguini.
-			<br>
-			Licensed under the <a href="LICENSE" target="_blank">MIT License</a>.
+		<footer id="footer" class="footer">
+			<div id="footer-powered">Powered by 
+				<a href="https://picturepan2.github.io/spectre/" target="_blank">
+					<img id="footer-spectre-logo" class="vertical-middle" 
+						src="assets/img/spectre-logo.svg" alt="Spectre">
+				</a>
+			</div>
+			<div id="footer-license">Licensed under the <a id="footer-license" href="LICENSE" target="_blank">MIT License</a></div>
 		</footer>
 	
 	</body>

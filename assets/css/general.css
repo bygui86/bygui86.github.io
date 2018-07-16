@@ -10,21 +10,55 @@ body {
 header {
 	position: fixed;
 	width: inherit;
-	padding-top: 5px;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	z-index: 100;
 }
 
 footer {
-	/* position: absolute;
-	bottom: 0; */
 	width: 100%;
-	padding-top: 75px;
-	padding-bottom: 25px;
+	padding-top: 2.5rem;
+	padding-bottom: 1rem;
 	text-align: center;
 }
 
 /* General background color */
 .backcolor {
 	background: #f8f9fa;
+}
+
+/* Spacing */
+div.spacing {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.top-spacing {
+	padding-top: 2rem;
+}
+
+.bottom-spacing {
+	padding-bottom: 2rem;
+}
+
+.bottom-reduced-spacing {
+	padding-bottom: 1rem;
+}
+
+/* Position */
+.item-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Size */
+.reduced-width {
+	width: 50%;
+}
+
+/* Text */
+.text-bold {
+	font-weight: bold;
 }
 
 /* Icons */
@@ -44,18 +78,48 @@ footer {
 }
 
 /* Images */
-.heroimg {
+img.vertical-middle {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+img.hero-img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-/* Text */
-.textcenter {
-	text-align: center;
+img.header-icon {
+	display: inline-block;
+	vertical-align: middle;
+	height: 24px;
+	width: 24px;
 }
 
-/* Spacing */
-.paragraphspacing {
-	padding-top: 50px;
+/* Labels */
+.header-label {
+	border-radius: .1rem;
+	color: #5b657a;
+	display: inline-block;
+	line-height: 1.2;
+	padding: .1rem .2rem;
+}
+
+.header-label.header-label-rounded {
+	border-radius: 5rem;
+	padding-left: .4rem;
+	padding-right: .4rem;
+}
+
+.header-label.header-label-secondary {
+	color: #5755d9;
+}
+
+/* Animations */
+span.header-hover:hover {
+	border-radius: 5rem;
+	padding-left: .4rem;
+	padding-right: .4rem;
+	background: #5755d9;
+	color: #fff;
 }
