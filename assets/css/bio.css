@@ -5,3 +5,24 @@
 	width: 70%;
 	min-height: 100%;
 }
+
+/* Downloads */
+ul.button-width, a.button-width {
+	width: 8rem;
+}
+
+/* Links */
+/* Spectre override */
+a:visited{
+	color: #5755d9 !important;
+}
+/* Spectre override */
+a:hover{
+	text-decoration: none;
+}
+
+/* Menu */
+/* Spectre override */
+.menu {
+	min-width: 1rem !important;
+}

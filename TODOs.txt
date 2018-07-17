@@ -2,25 +2,23 @@
 ---[ TODOs ]---
 
 [last-not-least]
-	add shadow on elements (where makes sense)
+	add shadow on elements (where makes sense: bio-timeline, github-item, ...)
 	favicon
 	download all possible css and js to reduce loading time and calls
+		spectre .. OK
+		octicons .. TODO
+		jquery .. TODO
 	tidy up css and js
 	minify all css and js
 
 [header]
 	header responsive resize not good for mobile
-	review position of objects with spectre framework ?
 
 [index]
 	set header properly
 
 [bio]
 	set header properly
-	skills
-		chips ?
-		bars ?
-	download buttons (cv, cover letter, motivation letter)
 
 [activites]
 	set header properly

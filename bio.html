@@ -6,9 +6,9 @@
 		<title>Matteo Baiguini's Bio</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-
+		<link rel="stylesheet" href="assets/css/spectre_0.5.3/spectre.min.css">
+		<link rel="stylesheet" href="assets/css/spectre_0.5.3/spectre-icons.min.css">
+		<link rel="stylesheet" href="assets/css/spectre_0.5.3/spectre-exp.min.css">
 		<link rel="stylesheet" href="assets/css/general.css">
 		<link rel="stylesheet" href="assets/css/bio.css">
 	</head>
@@ -70,34 +70,31 @@
 				<div class="divider"></div>
 			</div>
 			
-			<div id="content-downloads" class="reduced-width item-center top-spacing">
+			<div id="content-downloads" class="normal-width item-center top-spacing">
 				<table class="table text-center">
 					<tbody>
 						<tr>
 							<td width="33%" class="no-border">
-							<!-- <td width="25%"> -->
-								<button class="btn btn-block badge">
-									<a target="_blank" href="docs/resume.pdf">Resume</a>
-								</button>
+								<a class="btn button-width" target="_blank" href="docs/resume.pdf" download="MatteoBaiguini_Resume.pdf">Resume</a>
 							</td>
 							<td width="33%" class="no-border">
-							<!-- <td width="25%"> -->
-								<button class="btn btn-block badge">
-									<a target="_blank" href="docs/motivation-letter.pdf">Motivation letter</a>
-								</button>
+								<a class="btn button-width" target="_blank" href="docs/motivation-letter.pdf" download="MatteoBaiguini_MotivationLetter.pdf">Motivation letter</a>
 							</td>
 							<td width="33%" class="no-border">
-							<!-- <td width="25%"> -->
-								<button class="btn btn-block badge">
-									<a target="_blank" href="docs/cover-letter_EN.pdf">Cover letter</a>
-									<!-- <a target="_blank" href="docs/cover-letter_EN.pdf">Cover letter EN</a> -->
-								</button>
+								<div class="dropdown">
+									<a class="btn dropdown-toggle button-width" tabindex="0">
+										Cover letter <i class="icon icon-caret"></i>
+									</a>
+									<ul class="menu text-left button-width">
+										<li class="menu-item">
+											<a target="_blank" href="docs/cover-letter_EN.pdf" download="MatteoBaiguini_CoverLetter_EN.pdf">EN</a>
+										</li>
+										<li class="menu-item">
+											<a target="_blank" href="docs/cover-letter_DE.pdf" download="MatteoBaiguini_CoverLetter_DE.pdf">DE</a>
+										</li>
+									</ul>
+								</div>
 							</td>
-							<!-- <td width="25%">
-								<button class="btn badge">
-									<a target="_blank" href="docs/cover-letter_DE.pdf">Cover letter DE</a>
-								</button>
-							</td> -->
 						</tr>
 					</tbody>
 				</table>
@@ -288,27 +285,176 @@
 				</div>
 
 				<h3 class="text-center">Technology stack</h3>
-				TODO
 				<div id="content-resume-tech-stack" class="reduced-width item-center text-center bottom-spacing">
-					<a class="btn btn-link" target="_blank"
-						href="https://www.thoughtworks.com/insights/blog/domain-driven-design-services-architecture">
-						<span class="tech-label tech-label-rounded tech-hover">DDD</span>
-					</a>
-					<a class="btn btn-link" target="_blank"
-						href="">
-						<span class="tech-label tech-label-rounded tech-hover">TDD</span>
-					</a>
-					<a class="btn btn-link" target="_blank"
-						href="">
-						<span class="tech-label tech-label-rounded tech-hover">UML</span>
-					</a>
-					<br>
-					DDD | TDD | UML | Event-Driven | Microservices | eCommerce
-					Java/J2EE | SQL | NoSQL | XML/JSON | Soap/REST | GraphQL | Shell scripting
-					Spring | Spring Cloud | SAP Hybris | Build tools (Gradle, Maven, Ant) | Solr | Apache Kafka | Jenkins | Hibernate | Oracle DB | MySQL | Postgresql | MongoDB
-					Git | Docker | CI/CD
-					Eclipse | IntelliJ IDEA | Atlassian package
-					CQRS | Event sourcing
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.thoughtworks.com/insights/blog/domain-driven-design-services-architecture">
+							DDD
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="http://agilemanifesto.org/">
+							Agile
+						</a>
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">
+							TDD
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.youtube.com/watch?v=2u0sNRO-QKQ">
+							Hacker-way
+						</a>
+					</div>
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank"
+							href="https://martinfowler.com/articles/201701-event-driven.html">
+							Event-Driven
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.cncf.io/">
+							Cloud-native
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="http://microservices.io/">
+							Microservices
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://ecommerceguide.com/guides/what-is-ecommerce/">
+							eCommerce
+						</a>
+					</div>
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank"
+							href="https://martinfowler.com/bliki/CQRS.html">
+							CQRS
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://martinfowler.com/eaaDev/EventSourcing.html">
+							Event sourcing
+						</a>
+					</div>
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank"
+							href="https://java.com/en/">
+							Java/J2EE
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="http://groovy-lang.org/">
+							Groovy
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.geeksforgeeks.org/introduction-linux-shell-shell-scripting/">
+							Shell scripting
+						</a>
+					</div>
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank"
+							href="https://spring.io/">
+							Spring
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="http://projects.spring.io/spring-cloud/">
+							Spring Cloud
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://maven.apache.org/">
+							Maven
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://gradle.org/">
+							Gradle
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://cx.sap.com/en/">
+							SAP Hybris
+						</a>
+					</div>
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank"
+							href="http://lucene.apache.org/solr/">
+							Apache Solr
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="http://kafka.apache.org/">
+							Apache Kafka
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="http://hibernate.org/">
+							Hibernate
+						</a>
+					</div>
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.w3.org/TR/soap/">
+							SOAP
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://spring.io/understanding/REST">
+							REST
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://graphql.org/">
+							GraphQL
+						</a>
+					</div>
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank"
+							href="http://www.uml.org/">
+							UML
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.w3.org/XML/">
+							XML
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.json.org/">
+							JSON
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://en.wikipedia.org/wiki/SQL">
+							SQL
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.mongodb.com/nosql-explained">
+							NoSQL
+						</a>
+					</div>
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.docker.com/">
+							Docker
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://kubernetes.io/">
+							Kubernetes
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd">
+							CI/CD
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://jenkins.io/">
+							Jenkins
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://jenkins.io/projects/jenkins-x/">
+							JenkinsX
+						</a>
+					</div>
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.eclipse.org/">
+							Eclipse
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://www.jetbrains.com/idea/">
+							IntelliJ IDEA
+						</a>
+						<a class="btn btn-sm" target="_blank"
+							href="https://code.visualstudio.com/">
+							Visual Studio Code
+						</a>
+					</div>
 				</div>
 
 				<h3 class="text-center">Soft skills</h3>
