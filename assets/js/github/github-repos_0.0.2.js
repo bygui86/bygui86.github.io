@@ -1,25 +1,20 @@
 
 jQuery.loadRepos = function(username, callback) {
 	jQuery.getJSON('http://api.github.com/users/' + username + '/repos?per_page=10000&callback=?', callback);
-	// including repos from organisations
-	// jQuery.getJSON('http://api.github.com/users/' + username + '/repos?per_page=1000&type=all&callback=?', callback);
 };
 
 jQuery.fn.loadGitHubRepositories = function(username) {
 	var myProjects = $("#content-github-my-projects");
 	var forkedProjects = $("#content-github-forked-projects");
 	
-	myProjects.html('<span>Querying GitHub for my repositories...</span>');
-	forkedProjects.html('<span>Querying GitHub for forked repositories...</span>');
+	myProjects.html('<div class="loading loading-lg"></div>');
+	forkedProjects.html('<div class="loading loading-lg"></div>');
 	$.loadRepos(username, function(data) {
 		// meta info: data.meta
 		// array of repos: data.data
-
 		var repos = data.data;
 		sortByName(repos);
 
-		// usefull info: created_at, description, fork, full_name, html_url, language, name
-		// other info: forks, watchers
 		myProjects.empty();
 		forkedProjects.empty();
 		$(repos).each(function() {

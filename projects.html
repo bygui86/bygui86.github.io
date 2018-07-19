@@ -3,57 +3,88 @@
 <html>
 
 	<head>
-		<title>Matteo Baiguini's Projects</title>
+		<title>MB projects</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		
+		<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
 
 		<link rel="stylesheet" href="assets/css/spectre_0.5.3/spectre.min.css">
+		<link rel="stylesheet" href="assets/css/github/activity_0.1.5/github-activity-custom.css">
+		<link rel="stylesheet" href="assets/css/github/github-accordion_0.0.1.css">
 		<link rel="stylesheet" href="assets/css/general.css">
 		<link rel="stylesheet" href="assets/css/projects-activities.css">
-		<link rel="stylesheet" href="assets/github/github-activity/github-activity_0.1.5-custom.css">
-		<link rel="stylesheet" href="assets/github/github-repositories/github-accordion_0.0.1.css">
 	</head>
 
 	<body class="backcolor">
 
 		<header id="header" class="navbar backcolor">
 			<section id="navbar-section-left" class="navbar-section">
-				<a href="index.html" class="btn btn-link"><span class="label label-rounded label-secondary">Home</span></a>
-				<a href="bio.html" class="btn btn-link"><span class="label label-rounded label-secondary">Bio</span></a>
-				<a href="activities.html" class="btn btn-link"><span class="label label-rounded label-secondary">Last activities</span></a>
-				<a href="projects.html" class="btn btn-link"><span class="label label-rounded label-primary">Projects</span></a>
+				<a id="header-left-home" href="index.html" class="btn btn-link">
+					<span class="header-label header-label-rounded header-label-secondary header-hover">home</span>
+				</a>
+				<a id="header-left-bio" href="bio.html" class="btn btn-link">
+					<span class="header-label header-label-rounded header-label-secondary header-hover">bio</span>
+				</a>
+				<a id="header-left-activities" href="activities.html" class="btn btn-link">
+					<span class="header-label header-label-rounded header-label-secondary header-hover">activities</span>
+				</a>
+				<a id="header-left-activities" href="projects.html" class="btn btn-link">
+					<span class="label label-rounded label-primary">projects</span>
+				</a>
 			</section>
 			<section id="navbar-center" class="navbar-center">
 				<img id="logo" class="mediumicon" src="assets/img/mb-solid_logo-1.png" alt="MB SOLID consulting">
 			</section>
 			<section id="navbar-section-right" class="navbar-section">
-				<a href="mailto:matteo@solidarchitectures.com" class="btn btn-link">Email</a>
-				<a href="https://github.com/bygui86" class="btn btn-link">GitHub</a>
-				<a href="https://www.linkedin.com/in/matteobaiguini/" class="btn btn-link">LinkedIn</a>
-				<a href="https://www.xing.com/profile/Matteo_Baiguini/cv" class="btn btn-link">Xing</a>
+				<a id="header-right-email-link" href="mailto:matteo@solidarchitectures.com" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="email">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/email-1.png">
+				</a>
+				<a id="header-right-github-link" href="https://github.com/bygui86" target="_blank" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="github">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/github-1.png" alt="github">
+				</a>
+				<a id="header-right-linkedin-link" href="https://www.linkedin.com/in/matteobaiguini/" target="_blank" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="linkedin">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/linkedin-2.png" alt="linkedin">
+				</a>
+				<a id="header-right-xing-link" href="https://www.xing.com/profile/Matteo_Baiguini/cv" target="_blank" 
+					class="btn btn-link tooltip tooltip-bottom" data-tooltip="xing">
+					<img id="header-right-email-icon" class="header-icon" 
+						src="assets/img/xing-3.png" alt="xing">
+				</a>
 			</section>
 		</header>
-	
+
 		<div id="content" class="container bodycontent">
 			<div id="content-github-projects">
 				<h2>My projects</h2>
 				<div id="content-github-my-projects" class="gha-feed"></div>
 				
-				<!-- TODO: add spacing 50px before and after -->
-				<div class="divider"></div>
+				<div class="top-spacing">
+					<div class="divider"></div>
+				</div>
 
 				<h2>Forked projects</h2>
-				<div id="content-github-forked-projects" class="gha-feed"></div>
+				<div id="content-github-forked-projects" class="gha-feed top-spacing"></div>
 			</div>
 		</div>
 
-		<footer id="footer" class="footer textcenter">
-			Designed and built with <span class="text-error">♥</span> by Matteo Baiguini.
-			<br>
-			Licensed under the <a href="LICENSE" target="_blank">MIT License</a>.
+		<footer id="footer" class="footer">
+			<div id="footer-powered">Powered by 
+				<a href="https://picturepan2.github.io/spectre/" target="_blank">
+					<img id="footer-spectre-logo" class="vertical-middle" 
+						src="assets/img/spectre-logo.svg" alt="Spectre">
+				</a>
+			</div>
+			<div id="footer-license">Licensed under the <a id="footer-license" href="LICENSE" target="_blank">MIT License</a></div>
 		</footer>
-
-		<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
-		<script type="text/javascript" src="assets/github/github-repositories/github-repositories_0.0.2.js"></script>
+	
+		<script type="text/javascript" src="assets/js/jquery_1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/github/github-repos_0.0.3.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				$("#content-github-projects").loadGitHubRepositories("bygui86");

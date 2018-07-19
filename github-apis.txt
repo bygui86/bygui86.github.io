@@ -1,0 +1,12 @@
+
+---[ GitHub APIs ]---
+
+activities
+	https://api.github.com/users/<USERNAME>/events?per_page=<RESULTS_NUMBER>
+		>> usefull info:
+		>> other info:
+
+repos
+	http://api.github.com/users/<USERNAME>/repos?per_page=<RESULTS_NUMBER>&type=<ALL|MEMBER|OWNER(default)>
+		>> usefull info: created_at, description, fork, full_name, html_url, language, name
+		>> other info: forks, watchers
