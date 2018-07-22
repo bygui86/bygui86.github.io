@@ -16,8 +16,9 @@ header {
 }
 
 footer {
+	font-size: 0.6rem;
 	width: 100%;
-	padding-top: 2.5rem;
+	padding-top: 4.5rem;
 	padding-bottom: 1rem;
 	text-align: center;
 }
@@ -39,6 +40,10 @@ div.reduced-spacing {
 
 .top-spacing {
 	padding-top: 2rem;
+}
+
+.extended-top-spacing {
+	padding-top: 4rem;
 }
 
 .bottom-spacing {

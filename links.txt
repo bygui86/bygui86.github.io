@@ -2,6 +2,12 @@
 ---[ links ]---
 
 
+### SEARCH-ENGINE
+https://www.google.com/business/?ppsrc=GPDA2
+https://developers.google.com/search/docs/guides/enhance-site#add-a-sitelinks-searchbox-for-your-site
+https://developers.google.com/web/fundamentals/design-and-ux/responsive/#set-the-viewport
+
+
 ### TOOLS
 [minifier]
 	https://www.minifier.org/
