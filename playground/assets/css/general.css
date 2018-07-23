@@ -1,0 +1,146 @@
+
+/* Components */
+body {
+	width: 90%;
+	height: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+header {
+	position: fixed;
+	width: inherit;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	z-index: 100;
+}
+
+footer {
+	font-size: 0.6rem;
+	width: 100%;
+	padding-top: 4.5rem;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+/* General background color */
+.backcolor {
+	background: #f8f9fa;
+}
+
+/* Spacing */
+div.spacing {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+div.reduced-spacing {
+	padding-bottom: .5em;
+}
+
+.top-spacing {
+	padding-top: 2rem;
+}
+
+.extended-top-spacing {
+	padding-top: 4rem;
+}
+
+.bottom-spacing {
+	padding-bottom: 2rem;
+}
+
+.bottom-reduced-spacing {
+	padding-bottom: 1rem;
+}
+
+/* Position */
+.item-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Size */
+.reduced-width {
+	width: 50%;
+}
+
+.normal-width {
+	width: 70%;
+}
+
+.extended-width {
+	width: 90%;
+}
+
+/* Text */
+.text-bold {
+	font-weight: bold;
+}
+
+/* Icons */
+.smallicon {
+	width: 32px;
+	height: 32px;
+}
+
+.mediumicon {
+	width: 64px;
+	height: 64px;
+}
+
+.bigicon {
+	width: 128px;
+	height: 128px;
+}
+
+/* Images */
+img.vertical-middle {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+img.hero-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.header-icon {
+	display: inline-block;
+	vertical-align: middle;
+	height: 24px;
+	width: 24px;
+}
+
+/* Labels */
+.header-label {
+	border-radius: .1rem;
+	display: inline-block;
+	line-height: 1.2;
+	padding: .1rem .2rem;
+}
+
+.header-label.header-label-rounded {
+	border-radius: 5rem;
+	padding-left: .4rem;
+	padding-right: .4rem;
+}
+
+.header-label.header-label-secondary {
+	color: #5755d9;
+}
+
+/* Tables */
+.table td.no-border, .table th.no-border {
+	border-bottom: 0;
+}
+
+/* Animations */
+span.header-hover:hover, span.tech-hover:hover {
+	border-radius: 5rem;
+	padding-left: .4rem;
+	padding-right: .4rem;
+	background: #5755d9;
+	color: #fff;
+}
