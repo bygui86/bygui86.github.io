@@ -3,6 +3,7 @@
 
 [last-not-least]
 	add shadow on elements (where makes sense: bio-timeline, github-item, ...)
+	try spectre/experimentals/parallax on images
 	minify all css and js
 	search engine metadata
 
@@ -10,7 +11,7 @@
 	header responsive resize not good for mobile
 
 [footer]
-	add terms of service
+	-
 
 [index]
 	set header properly
@@ -19,6 +20,7 @@
 	set header properly
 	add skills: monitoring, prometheus(?), grafana(?)
 	add skills: tracing, opentracing, zipkin, jaeger
+	try spectre/components/compact tiles instead of chips for skills
 
 [activites]
 	set header properly
