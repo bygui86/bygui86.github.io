@@ -9,11 +9,16 @@
 [header]
 	header responsive resize not good for mobile
 
+[footer]
+	add terms of service
+
 [index]
 	set header properly
 
 [bio]
 	set header properly
+	add skills: monitoring, prometheus(?), grafana(?)
+	add skills: tracing, opentracing, zipkin, jaeger
 
 [activites]
 	set header properly
