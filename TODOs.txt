@@ -3,7 +3,6 @@
 
 [last-not-least]
 	add shadow on elements (where makes sense: bio-timeline, github-item, ...)
-	try spectre/experimentals/parallax on images
 	minify all css and js
 	search engine metadata
 
@@ -18,12 +17,13 @@
 
 [bio]
 	set header properly
-	add skills: monitoring, prometheus(?), grafana(?)
-	add skills: tracing, opentracing, zipkin, jaeger
 	try spectre/components/compact tiles instead of chips for skills
+	try spectre/components/modals in experience section (date + company + tile in card or tile / description in modal)
+	add spectre/experimentals/filters on top of tech stack
 
 [activites]
 	set header properly
+	responsive version not working properly (single activites)
 
 [projects]
 	set header properly
