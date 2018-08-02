@@ -19,8 +19,8 @@
 		<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
 
 		<link rel="stylesheet" href="assets/css/spectre_0.5.3/spectre.min.css">
+		<link rel="stylesheet" href="assets/css/github/octicons_2.0.2/octicons.min.css">
 		<link rel="stylesheet" href="assets/css/github/activity_0.1.5/github-activity-custom.css">
-		<link rel="stylesheet" href="assets/css/github/github-accordion_0.0.1.css">
 		<link rel="stylesheet" href="assets/css/general.css">
 		<link rel="stylesheet" href="assets/css/projects-activities.css">
 	</head>
@@ -70,24 +70,30 @@
 		</header>
 
 		<div id="content" class="container bodycontent">
-			<h1>This page is still under construction</h1>
-
-			<img id="content-hero-img" class="img-responsive img-fit-contain rounded hero-img" src="assets/img/under-construction-1.png">
-			
-			<div class="top-spacing">
-				<div class="divider"></div>
-			</div>
-
 			<div id="content-github-projects">
-				<h2>My projects</h2>
-				<div id="content-github-my-projects" class="gha-feed"></div>
+
+				<div id="content-github-my-projects-container" class="gha-feed githubcomp">
+					<div class="gha-header">
+						<div class="gha-github-icon"><span class="octicon octicon-mark-github"></span></div>
+						<div class="gha-user-info">My projects<p><a class="" href="https://github.com/bygui86" target="_blank">bygui86</a></p></div>
+						<div class="gha-gravatar"><a class="" href="https://github.com/bygui86" target="_blank"><img src="https://avatars3.githubusercontent.com/u/22518997?v=4"></a></div>
+					</div>
+					<div id="content-github-my-projects"></div>
+				</div>
 				
-				<div class="top-spacing">
+				<div class="top-spacing bottom-spacing">
 					<div class="divider"></div>
 				</div>
 
-				<h2>Forked projects</h2>
-				<div id="content-github-forked-projects" class="gha-feed top-spacing"></div>
+				<div id="content-github-forked-projects-container" class="gha-feed githubcomp">
+					<div class="gha-header">
+						<div class="gha-github-icon"><span class="octicon octicon-mark-github"></span></div>
+						<div class="gha-user-info">Forked projects<p><a class="" href="https://github.com/bygui86" target="_blank">bygui86</a></p></div>
+						<div class="gha-gravatar"><a class="" href="https://github.com/bygui86" target="_blank"><img src="https://avatars3.githubusercontent.com/u/22518997?v=4"></a></div>
+					</div>
+					<div id="content-github-forked-projects"></div>
+				</div>
+
 			</div>
 		</div>
 
