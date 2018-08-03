@@ -6,6 +6,16 @@
 	min-height: 100%;
 }
 
+/* Links */
+/* Spectre override */
+a:visited{
+	color: #5755d9 !important;
+}
+/* Spectre override */
+a:hover{
+	text-decoration: none;
+}
+
 /* GitHub feeds vs Spectre */
 .githubcomp {
 	box-sizing: unset;
