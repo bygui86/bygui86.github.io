@@ -19,7 +19,6 @@
 	set header properly
 	try spectre/components/compact tiles instead of chips for skills
 	try spectre/components/modals in experience section (date + company + tile in card or tile / description in modal)
-	add spectre/experimentals/filters on top of tech stack
 
 [activites]
 	set header properly
@@ -27,5 +26,3 @@
 
 [projects]
 	set header properly
-	list of projects (with icons ? spring, spring-cloud, docker, javascript, java, )
-	translate dates properly

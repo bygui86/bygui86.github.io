@@ -187,10 +187,6 @@
   font-size: 16px;
 }
 
-.gha-activity:last-child {
-  padding-bottom: 100px;
-}
-
 .gha-activity-icon .octicon{
   display: inline;
   float: left;
@@ -219,6 +215,7 @@
 /*! MESSAGE */
 .gha-message {
   display: inline-block;
+  /* display: contents; */
   float: left;
 }
 

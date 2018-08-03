@@ -8,11 +8,11 @@
 
 /* Links */
 /* Spectre override */
-a:visited{
+a.a-spectre-override:visited{
 	color: #5755d9 !important;
 }
 /* Spectre override */
-a:hover{
+a.a-spectre-override:hover{
 	text-decoration: none;
 }
 

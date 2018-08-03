@@ -1,0 +1,16 @@
+
+/* Body content */
+.bodycontent {
+	padding-top: 100px;
+	width: 70%;
+	min-height: 100%;
+}
+
+/* GitHub feeds vs Spectre */
+.githubcomp {
+	box-sizing: unset;
+}
+
+.projicon {
+	width: 32px;
+}
