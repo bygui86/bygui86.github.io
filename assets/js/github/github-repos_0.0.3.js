@@ -1,6 +1,6 @@
 
 jQuery.loadRepos = function(username, callback) {
-	jQuery.getJSON('http://api.github.com/users/' + username + '/repos?per_page=10000&callback=?', callback);
+	jQuery.getJSON('https://api.github.com/users/' + username + '/repos?per_page=10000&callback=?', callback);
 };
 
 jQuery.fn.loadGitHubRepositories = function(username) {
