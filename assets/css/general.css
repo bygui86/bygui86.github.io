@@ -144,3 +144,7 @@ span.header-hover:hover, span.tech-hover:hover {
 	background: #5755d9;
 	color: #fff;
 }
+
+.shadow {
+	box-shadow: -6px 6px 16px 0 rgba(0,0,0,0.2);
+}

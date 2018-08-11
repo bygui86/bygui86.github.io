@@ -1,10 +1,17 @@
 
 ---[ TODOs ]---
 
+[search-engine]
+		https://www.google.com/webmasters/tools/dashboard?hl=en&authuser=0&siteUrl=http://mbsolidconsulting.com/
+	metadata
+	sitemap (format?)
+	robots.txt
+		https://www.google.com/webmasters/tools/robots-testing-tool?hl=en&siteUrl=http://mbsolidconsulting.com/
+	rich card
+		https://www.google.com/webmasters/tools/rich-cards?hl=en&siteUrl=http://mbsolidconsulting.com/
+
 [last-not-least]
-	add shadow on elements (where makes sense: bio-timeline, github-item, ...)
 	minify all css and js
-	search engine metadata
 
 [header]
 	header responsive resize not good for mobile
@@ -14,11 +21,11 @@
 
 [index]
 	set header properly
+	make hero image better responsive
 
 [bio]
 	set header properly
-	try spectre/components/compact tiles instead of chips for skills
-	try spectre/components/modals in experience section (date + company + tile in card or tile / description in modal)
+	make hero image better responsive
 
 [activites]
 	set header properly

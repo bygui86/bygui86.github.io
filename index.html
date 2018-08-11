@@ -28,16 +28,16 @@
 		
 		<header id="header" class="navbar backcolor">
 			<section id="navbar-section-left" class="navbar-section">
-				<a id="header-left-home" href="index.html" class="btn btn-link">
+				<a id="header-left-home" href="index.html" class="btn btn-link" hreflang="en">
 					<span class="label label-rounded label-primary">home</span>
 				</a>
-				<a id="header-left-bio" href="bio.html" class="btn btn-link">
+				<a id="header-left-bio" href="bio.html" class="btn btn-link" hreflang="en">
 					<span class="header-label header-label-rounded header-label-secondary header-hover">bio</span>
 				</a>
-				<a id="header-left-activities" href="activities.html" class="btn btn-link">
+				<a id="header-left-activities" href="activities.html" class="btn btn-link" hreflang="en">
 					<span class="header-label header-label-rounded header-label-secondary header-hover">activities</span>
 				</a>
-				<a id="header-left-activities" href="projects.html" class="btn btn-link">
+				<a id="header-left-activities" href="projects.html" class="btn btn-link" hreflang="en">
 					<span class="header-label header-label-rounded header-label-secondary header-hover">projects</span>
 				</a>
 			</section>
@@ -47,17 +47,17 @@
 					<img id="header-right-email-icon" class="header-icon" 
 						src="assets/img/email-1.png">
 				</a>
-				<a id="header-right-github-link" href="https://github.com/bygui86" target="_blank" 
+				<a id="header-right-github-link" href="https://github.com/bygui86" target="_blank" hreflang="en"
 					class="btn btn-link tooltip tooltip-bottom" data-tooltip="github">
 					<img id="header-right-email-icon" class="header-icon" 
 						src="assets/img/github-1.png" alt="github">
 				</a>
-				<a id="header-right-linkedin-link" href="https://www.linkedin.com/in/matteobaiguini/" target="_blank" 
+				<a id="header-right-linkedin-link" href="https://www.linkedin.com/in/matteobaiguini/" target="_blank" hreflang="en"
 					class="btn btn-link tooltip tooltip-bottom" data-tooltip="linkedin">
 					<img id="header-right-email-icon" class="header-icon" 
 						src="assets/img/linkedin-2.png" alt="linkedin">
 				</a>
-				<a id="header-right-xing-link" href="https://www.xing.com/profile/Matteo_Baiguini/cv" target="_blank" 
+				<a id="header-right-xing-link" href="https://www.xing.com/profile/Matteo_Baiguini/cv" target="_blank" hreflang="en"
 					class="btn btn-link tooltip tooltip-bottom" data-tooltip="xing">
 					<img id="header-right-email-icon" class="header-icon" 
 						src="assets/img/xing-3.png" alt="xing">
@@ -66,8 +66,13 @@
 		</header>
 
 		<div id="content" class="container bodycontent">
-			<img id="content-solid-logo" class="img-responsive img-fit-contain rounded hero-img" 
-				src="assets/img/mb-solid_logo-2.png" alt="MB SOLID consulting">
+
+			<picture id="content-solid-logo-picture">
+				<source media="(max-width: 720px)" srcset="assets/img/mb-solid_logo-1.png">
+				<source media="(min-width: 721px)" srcset="assets/img/mb-solid_logo-2.png">
+				<img id="content-solid-logo-img"  class="logo-hero-img"
+					src="assets/img/mb-solid_logo-2.png" alt="MB SOLID consulting">
+			</picture>
 
 			<div id="content-cite" class="text-center extended-top-spacing">
 				<p>Make the impossible possible, make the possible easy, make the easy elegant.</p>
@@ -80,16 +85,16 @@
 				<tbody>
 					<tr>
 						<td width="33%" class="no-border text-left">
-							Release under the <a id="footer-license" href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0 License</a>
+							Release under the <a id="footer-license" href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" hreflang="en">Apache 2.0 License</a>
 						</td>
 						<td width="33%" class="no-border text-center">
 							Powered by 
-							<a id="footer-spectre" href="https://picturepan2.github.io/spectre/" target="_blank">
+							<a id="footer-spectre" href="https://picturepan2.github.io/spectre/" target="_blank" hreflang="en">
 								<img id="footer-spectre-logo" class="vertical-middle" src="assets/img/spectre-logo.svg" alt="Spectre">
 							</a>
 						</td>
 						<td width="33%" class="no-border text-right">
-							<a id="footer-terms-service" href="#footer-terms-service-modal">Terms of service</a>
+							<a id="footer-terms-service" href="#footer-terms-service-modal" hreflang="en">Terms of service</a>
 						</td>
 					</tr>
 				</tbody>

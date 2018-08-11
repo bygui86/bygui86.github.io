@@ -23,12 +23,12 @@ https://developers.google.com/web/fundamentals/design-and-ux/responsive/#set-the
 	https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp
 [shadow on hover]
 	https://www.w3schools.com/howto/howto_css_pricing_table.asp
-[timeline]
-	https://www.w3schools.com/howto/howto_css_timeline.asp
 [hero image]
 	https://www.w3schools.com/howto/howto_css_hero_image.asp
-[skill-bar]
-	https://www.w3schools.com/howto/howto_css_skill_bar.asp
+[timeline]
+	https://www.w3schools.com/howto/howto_css_timeline.asp
+[background]
+	https://www.w3schools.com/cssref/pr_background-position.asp
 
 
 ### GITHUB

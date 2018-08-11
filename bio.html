@@ -18,7 +18,8 @@
 
 		<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
 
-		<link rel="stylesheet" href="assets/css/spectre_0.5.3/spectre.min.css">
+		<!-- <link rel="stylesheet" href="assets/css/spectre_0.5.3/spectre.min.css"> -->
+		<link rel="stylesheet" href="assets/css/spectre_0.5.3/spectre.css">
 		<link rel="stylesheet" href="assets/css/spectre_0.5.3/spectre-icons.min.css">
 		<link rel="stylesheet" href="assets/css/general.css">
 		<link rel="stylesheet" href="assets/css/bio.css">
@@ -29,16 +30,16 @@
 		
 		<header id="header" class="navbar backcolor">
 			<section id="navbar-section-left" class="navbar-section">
-				<a id="header-left-home" href="index.html" class="btn btn-link">
+				<a id="header-left-home" href="index.html" class="btn btn-link" hreflang="en">
 					<span class="header-label header-label-rounded header-label-secondary header-hover">home</span>
 				</a>
-				<a id="header-left-bio" href="bio.html" class="btn btn-link">
+				<a id="header-left-bio" href="bio.html" class="btn btn-link" hreflang="en">
 					<span class="label label-rounded label-primary">bio</span>
 				</a>
-				<a id="header-left-activities" href="activities.html" class="btn btn-link">
+				<a id="header-left-activities" href="activities.html" class="btn btn-link" hreflang="en">
 					<span class="header-label header-label-rounded header-label-secondary header-hover">activities</span>
 				</a>
-				<a id="header-left-activities" href="projects.html" class="btn btn-link">
+				<a id="header-left-activities" href="projects.html" class="btn btn-link" hreflang="en">
 					<span class="header-label header-label-rounded header-label-secondary header-hover">projects</span>
 				</a>
 			</section>
@@ -51,17 +52,17 @@
 					<img id="header-right-email-icon" class="header-icon" 
 						src="assets/img/email-1.png">
 				</a>
-				<a id="header-right-github-link" href="https://github.com/bygui86" target="_blank" 
+				<a id="header-right-github-link" href="https://github.com/bygui86" target="_blank" hreflang="en"
 					class="btn btn-link tooltip tooltip-bottom" data-tooltip="github">
 					<img id="header-right-email-icon" class="header-icon" 
 						src="assets/img/github-1.png" alt="github">
 				</a>
-				<a id="header-right-linkedin-link" href="https://www.linkedin.com/in/matteobaiguini/" target="_blank" 
+				<a id="header-right-linkedin-link" href="https://www.linkedin.com/in/matteobaiguini/" target="_blank" hreflang="en"
 					class="btn btn-link tooltip tooltip-bottom" data-tooltip="linkedin">
 					<img id="header-right-email-icon" class="header-icon" 
 						src="assets/img/linkedin-2.png" alt="linkedin">
 				</a>
-				<a id="header-right-xing-link" href="https://www.xing.com/profile/Matteo_Baiguini/cv" target="_blank" 
+				<a id="header-right-xing-link" href="https://www.xing.com/profile/Matteo_Baiguini/cv" target="_blank" hreflang="en"
 					class="btn btn-link tooltip tooltip-bottom" data-tooltip="xing">
 					<img id="header-right-email-icon" class="header-icon" 
 						src="assets/img/xing-3.png" alt="xing">
@@ -71,8 +72,8 @@
 
 		<div id="content" class="container bodycontent">
 
-			<img id="content-hero-img" class="img-responsive img-fit-contain rounded hero-img" src="assets/img/picture_big.jpg">
-			
+			<div id="content-bio-hero-img" class="bio-hero-img"></div>
+
 			<div id="content-motivation" class="normal-width item-center top-spacing">
 				<p>"The technology is my passion", "I love to develop" and things like these can be said by anyone. But just few of them are really going deeper into a technology, to understand really how it does work.</p>
 				<p>This is how I am: analysing the requirements, searching the best technology to achieve the objective, studying and finally implementing a high-quality solution.</p>
@@ -90,22 +91,22 @@
 					<tbody>
 						<tr>
 							<td width="33%" class="no-border">
-								<a class="btn button-width" target="_blank" href="docs/resume.pdf" download="MatteoBaiguini_Resume.pdf">Resume</a>
+								<a class="btn button-width shadow" target="_blank" href="docs/resume.pdf" download="MatteoBaiguini_Resume.pdf" hreflang="en">Resume</a>
 							</td>
 							<td width="33%" class="no-border">
-								<a class="btn button-width" target="_blank" href="docs/motivation-letter.pdf" download="MatteoBaiguini_MotivationLetter.pdf">Motivation letter</a>
+								<a class="btn button-width shadow" target="_blank" href="docs/motivation-letter.pdf" download="MatteoBaiguini_MotivationLetter.pdf" hreflang="en">Motivation letter</a>
 							</td>
 							<td width="33%" class="no-border">
 								<div class="dropdown">
-									<a class="btn dropdown-toggle button-width" tabindex="0">
+									<a class="btn dropdown-toggle button-width shadow" tabindex="0">
 										Cover letter <i class="icon icon-caret"></i>
 									</a>
 									<ul class="menu text-left button-width">
 										<li class="menu-item">
-											<a target="_blank" href="docs/cover-letter_EN.pdf" download="MatteoBaiguini_CoverLetter_EN.pdf">EN</a>
+											<a target="_blank" href="docs/cover-letter_EN.pdf" download="MatteoBaiguini_CoverLetter_EN.pdf" hreflang="en">EN</a>
 										</li>
 										<li class="menu-item">
-											<a target="_blank" href="docs/cover-letter_DE.pdf" download="MatteoBaiguini_CoverLetter_DE.pdf">DE</a>
+											<a target="_blank" href="docs/cover-letter_DE.pdf" download="MatteoBaiguini_CoverLetter_DE.pdf" hreflang="de">DE</a>
 										</li>
 									</ul>
 								</div>
@@ -132,8 +133,16 @@
 								<div class="tile">
 									<div class="tile-content">
 										<p class="tile-subtitle">since Jun 2018</p>
-										<p class="tile-title">MB SOLID Consulting | Zurich | Switzerland</p>
-										<p class="tile-title"><b>Freelance Software Architect and Developer</b></p>
+										<p class="tile-title">
+											MB SOLID Consulting | Zurich | Switzerland
+											<br>
+											<b>Freelance Software Architect and Developer</b>
+										</p>
+										<p class="tile-title">
+											I was born in Milan, where I studied Computer Sciences at the University of Milano-Bicocca and started working on the eCommerce field with the SAP hybris platform.
+											I moved to Zurich at the end of 2015, always working on eCommerce on SAP hybris and moving steps toward cloud-native architectures.
+											Currently I work as Freelancer Software architect and developer for the biggest electronic retailer of Switzerland, developing a innovative cloud-native event-driven eCommerce platform.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -145,10 +154,15 @@
 								<div class="tile">
 									<div class="tile-content">
 										<p class="tile-subtitle">Dec 2016 > May 2018</p>
-										<p class="tile-title">foryouandyourcustomers AG | Zurich | Switzerland</p>
-										<p class="tile-title"><b>Software Architect and Developer</b></p>
-										<p class="tile-title">I work in close contact with customers satisfying their business requirements and realizing new technical commerce solutions. 
-											I keep also myself up to date on new technologies such as new architectures (microservices) and containerization.</p>
+										<p class="tile-title">
+											foryouandyourcustomers AG | Zurich | Switzerland
+											<br>
+											<b>Software Architect and Developer</b>
+										</p>
+										<p class="tile-title">
+											I work in close contact with customers satisfying their business requirements and realizing new technical commerce solutions. 
+											I keep also myself up to date on new technologies such as new architectures (microservices) and containerization.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -166,10 +180,15 @@
 								<div class="tile">
 									<div class="tile-content">
 										<p class="tile-subtitle">Oct 2015 > Nov 2016</p>
-										<p class="tile-title">webtiser AG | Zurich | Switzerland</p>
-										<p class="tile-title"><b>Technical Team Leader</b></p>
-										<p class="tile-title">My tasks go from approaching the most difficult issues in a project, identifying best technical and architectural solutions, 
-											being up-to-date on new hybris features and other technologies, up to mentoring and leading other developers.</p>
+										<p class="tile-title">
+											webtiser AG | Zurich | Switzerland
+											<br>
+											<b>Technical Team Leader</b>
+										</p>
+										<p class="tile-title">
+											My tasks go from approaching the most difficult issues in a project, identifying best technical and architectural solutions, 
+											being up-to-date on new hybris features and other technologies, up to mentoring and leading other developers.
+										</p>
 										</div>
 									</div>
 								</div>
@@ -181,12 +200,16 @@
 								<div class="tile">
 									<div class="tile-content">
 										<p class="tile-subtitle">Mar 2014 > Sep 2015</p>
-										<p class="tile-title">A.S. Watson Group Europe | Milan | Italy</p>
-										<p class="tile-title"><b>hybris Senior Analyst and Developer</b></p>
-										<p class="tile-title">My tasks go from approaching problems, identifying technical solutions, up to develop them.
+										<p class="tile-title">
+											A.S. Watson Group Europe | Milan | Italy
 											<br>
-											I design and develop new complex features of project, starting from back-end arriving to expose functionalities on front-end. 
-											These features are both commercial and technical. I am also working on Index Engine optimization and deploying new releases.</p>
+											<b>hybris Senior Analyst and Developer</b>
+										</p>
+										<p class="tile-title">
+											My tasks go from approaching problems, identifying technical solutions, up to develop them.
+											I design and develop new complex features of project, starting from back-end arriving to expose functionalities on front-end.
+											These features are both commercial and technical. I am also working on Index Engine optimization and deploying new releases.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -204,12 +227,16 @@
 								<div class="tile">
 									<div class="tile-content">
 										<p class="tile-subtitle">Mar 2012 > Feb 2014</p>
-										<p class="tile-title">Techedge Group S.p.A. | Milan | Italy</p>
-										<p class="tile-title"><b>hybris Consultant and Developer</b></p>
-										<p class="tile-title">My tasks go from analyzing all the business requirements, up to the technical development of both the architectural system and the infrastructural one.
+										<p class="tile-title">
+											Techedge Group S.p.A. | Milan | Italy
 											<br>
+											<b>hybris Consultant and Developer</b>
+										</p>
+										<p class="tile-title">
+											My tasks go from analyzing all the business requirements, up to the technical development of both the architectural system and the infrastructural one.
 											I work on both back-end and front-end sides, dealing with development of new modules for the communication with other third-party platforms, process management of checkout flow, 
-											catalog management and automation build process.</p>
+											catalog management and automation build process.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -293,187 +320,187 @@
 				<h3 class="text-center bottom-reduced-spacing">Technology stack</h3>
 				<div id="content-resume-tech-stack" class="reduced-width item-center text-center">
 					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.youtube.com/watch?v=2u0sNRO-QKQ">
 							Hacker-way
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="http://agilemanifesto.org/">
 							Agile
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.thoughtworks.com/insights/blog/domain-driven-design-services-architecture">
 							DDD
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">
 							TDD
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd">
 							CI/CD
 						</a>
 					</div>
 					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://martinfowler.com/articles/201701-event-driven.html">
 							Event-Driven
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.cncf.io/">
 							Cloud-native
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="http://microservices.io/">
 							Microservices
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://ecommerceguide.com/guides/what-is-ecommerce/">
 							eCommerce
 						</a>
 					</div>
 					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://martinfowler.com/bliki/CQRS.html">
 							CQRS
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://martinfowler.com/eaaDev/EventSourcing.html">
 							Event sourcing
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://martinfowler.com/eaaCatalog/">
 							Design patterns
 						</a>
 					</div>
 					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://grafana.com/">
 							Monitoring
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="http://opentracing.io/">
 							Tracing
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://xebialabs.com/the-ultimate-devops-tool-chest/logging/">
 							Logging
 						</a>
 					</div>
 					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://java.com/en/">
 							Java/J2EE
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="http://groovy-lang.org/">
 							Groovy
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.geeksforgeeks.org/introduction-linux-shell-shell-scripting/">
 							Shell scripting
 						</a>
 					</div>
 					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://spring.io/">
 							Spring
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="http://projects.spring.io/spring-cloud/">
 							Spring Cloud
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://maven.apache.org/">
 							Maven
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://gradle.org/">
 							Gradle
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://cx.sap.com/en/">
 							SAP Hybris
 						</a>
 					</div>
 					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="http://lucene.apache.org/solr/">
 							Apache Solr
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="http://kafka.apache.org/">
 							Apache Kafka
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="http://hibernate.org/">
 							Hibernate
 						</a>
 					</div>
 					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.w3.org/TR/soap/">
 							SOAP
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://spring.io/understanding/REST">
 							REST
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://graphql.org/">
 							GraphQL
 						</a>
 					</div>
 					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="http://www.uml.org/">
 							UML
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.w3.org/XML/">
 							XML
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.json.org/">
 							JSON
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://en.wikipedia.org/wiki/SQL">
 							SQL
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.mongodb.com/nosql-explained">
 							NoSQL
 						</a>
 					</div>
 					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.docker.com/">
 							Docker
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://kubernetes.io/">
 							Kubernetes
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://jenkins.io/">
 							Jenkins
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://jenkins.io/projects/jenkins-x/">
 							JenkinsX
 						</a>
 					</div>
 					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.eclipse.org/">
 							Eclipse
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.jetbrains.com/idea/">
 							IntelliJ IDEA
 						</a>
-						<a class="btn btn-sm" target="_blank"
+						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://code.visualstudio.com/">
 							Visual Studio Code
 						</a>
@@ -565,16 +592,16 @@
 				<tbody>
 					<tr>
 						<td width="33%" class="no-border text-left">
-							Release under the <a id="footer-license" href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0 License</a>
+							Release under the <a id="footer-license" href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" hreflang="en">Apache 2.0 License</a>
 						</td>
 						<td width="33%" class="no-border text-center">
 							Powered by 
-							<a id="footer-spectre" href="https://picturepan2.github.io/spectre/" target="_blank">
+							<a id="footer-spectre" href="https://picturepan2.github.io/spectre/" target="_blank" hreflang="en">
 								<img id="footer-spectre-logo" class="vertical-middle" src="assets/img/spectre-logo.svg" alt="Spectre">
 							</a>
 						</td>
 						<td width="33%" class="no-border text-right">
-							<a id="footer-terms-service" href="#footer-terms-service-modal">Terms of service</a>
+							<a id="footer-terms-service" href="#footer-terms-service-modal" hreflang="en">Terms of service</a>
 						</td>
 					</tr>
 				</tbody>

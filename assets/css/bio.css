@@ -31,3 +31,23 @@ a:hover{
 .tile-subtitle {
 	font-weight: bold;
 }
+
+/* Hero image */
+.bio-hero-img {
+	/* The image used */
+	background-image: url("../img/picture_big.jpg");
+
+	/* Set a specific height */
+	min-height: 200px;
+	height: 600px;
+	min-width: 300px;
+	width: 100%;
+
+	/* Position and center the image to scale nicely on all screens */
+	/* background-position: center; */
+	/* background-position: center top; */
+	background-position: 70% 30%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
