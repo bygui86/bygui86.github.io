@@ -1,6 +1,12 @@
 
 ---[ links ]---
 
+### IN-PROGRESS
+https://www.w3schools.com/cssref/pr_background-position.asp
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+https://www.webfx.com/blog/web-design/responsive-images/
+https://css-tricks.com/responsive-images-css/
+
 
 ### SEARCH-ENGINE
 https://www.google.com/business/?ppsrc=GPDA2
