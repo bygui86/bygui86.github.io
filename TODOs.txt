@@ -1,6 +1,10 @@
 
 ---[ TODOs ]---
 
+
+? redo everything with jekyll ?
+
+
 [search-engine]
 		https://www.google.com/webmasters/tools/dashboard?hl=en&authuser=0&siteUrl=http://mbsolidconsulting.com/
 	metadata
