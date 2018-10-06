@@ -38,12 +38,20 @@ div.reduced-spacing {
 	padding-bottom: .5em;
 }
 
+.top-extended-spacing {
+	padding-top: 4rem;
+}
+
 .top-spacing {
 	padding-top: 2rem;
 }
 
-.extended-top-spacing {
-	padding-top: 4rem;
+.top-reduced-spacing {
+	padding-top: 1rem;
+}
+
+.bottom-extended-spacing {
+	padding-bottom: 4rem;
 }
 
 .bottom-spacing {
