@@ -1,15 +1,14 @@
 
 ---[ links ]---
 
-### IN-PROGRESS
-https://www.w3schools.com/cssref/pr_background-position.asp
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
-https://www.webfx.com/blog/web-design/responsive-images/
-https://css-tricks.com/responsive-images-css/
-
 
 ### SEARCH-ENGINE
-https://www.google.com/business/?ppsrc=GPDA2
+#### CONSOLE
+https://search.google.com/search-console?resource_id=sc-domain%3Ambsolidconsulting.com&hl=en
+#### ROBOTS.TXT VERIFIER
+https://www.google.com/webmasters/tools/robots-testing-tool?hl=en&siteUrl=http://mbsolidconsulting.com/
+
+### GOOGLE DEVELOPER
 https://developers.google.com/search/docs/guides/enhance-site#add-a-sitelinks-searchbox-for-your-site
 https://developers.google.com/web/fundamentals/design-and-ux/responsive/#set-the-viewport
 

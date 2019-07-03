@@ -1,13 +1,6 @@
 
 ---[ TODOs ]---
 
-[search-engine]
-		https://www.google.com/webmasters/tools/dashboard?hl=en&authuser=0&siteUrl=http://mbsolidconsulting.com/
-	robots.txt
-		https://www.google.com/webmasters/tools/robots-testing-tool?hl=en&siteUrl=http://mbsolidconsulting.com/
-	rich card
-		https://www.google.com/webmasters/tools/rich-cards?hl=en&siteUrl=http://mbsolidconsulting.com/
-
 [issues]
 	header responsive resize not good for mobile
 	make hero image better responsive
