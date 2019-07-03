@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: /lib/
+Disallow: /playground/
+Disallow: /_config.yaml
+Disallow: /.gitignore
+Disallow: /github-apis.txt
+Disallow: /LICENSE
+Disallow: /links.txt
+Disallow: /README.md
+Disallow: /TODOs.txt
+Allow: /assets/css/
+Allow: /assets/img/
+Allow: /assets/js/
+Allow: /docs/
+Allow: /terms-of-service/
+Allow: /activities.html
+Allow: /bio.html
+Allow: /index.html
+Allow: /projects.html
+Allow: /sitemap.xml
+
+Sitemap: https://mbsolidconsulting.com/sitemap.xml
