@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>https://mbsolidconsulting.com/</loc>
+    <lastmod>2019-06-17T18:23:09+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://mbsolidconsulting.com/index.html</loc>
+    <lastmod>2019-06-17T18:23:09+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mbsolidconsulting.com/bio.html</loc>
+    <lastmod>2019-06-17T18:23:09+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mbsolidconsulting.com/activities.html</loc>
+    <lastmod>2019-06-17T18:23:09+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mbsolidconsulting.com/projects.html</loc>
+    <lastmod>2019-06-17T18:23:09+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mbsolidconsulting.com/docs/resume.pdf</loc>
+    <lastmod>2019-06-17T18:23:09+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mbsolidconsulting.com/docs/motivation-letter.pdf</loc>
+    <lastmod>2019-06-17T18:23:09+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mbsolidconsulting.com/docs/cover-letter_EN.pdf</loc>
+    <lastmod>2019-06-17T18:23:09+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mbsolidconsulting.com/docs/cover-letter_DE.pdf</loc>
+    <lastmod>2019-06-17T18:23:09+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mbsolidconsulting.com/docs/cert-hybris.pdf</loc>
+    <lastmod>2019-06-17T18:23:09+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+</urlset>
