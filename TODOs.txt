@@ -1,39 +1,13 @@
 
 ---[ TODOs ]---
 
-
-? redo everything with jekyll ?
-
-
 [search-engine]
 		https://www.google.com/webmasters/tools/dashboard?hl=en&authuser=0&siteUrl=http://mbsolidconsulting.com/
-	metadata
-	sitemap (format?)
 	robots.txt
 		https://www.google.com/webmasters/tools/robots-testing-tool?hl=en&siteUrl=http://mbsolidconsulting.com/
 	rich card
 		https://www.google.com/webmasters/tools/rich-cards?hl=en&siteUrl=http://mbsolidconsulting.com/
 
-[last-not-least]
-	minify all css and js
-
-[header]
+[issues]
 	header responsive resize not good for mobile
-
-[footer]
-	-
-
-[index]
-	set header properly
 	make hero image better responsive
-
-[bio]
-	set header properly
-	make hero image better responsive
-
-[activites]
-	set header properly
-	responsive version not working properly (single activites)
-
-[projects]
-	set header properly
