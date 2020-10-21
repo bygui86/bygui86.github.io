@@ -1,26 +1,26 @@
 
 jQuery.loadRepos = function(username, callback) {
-	jQuery.getJSON('https://api.github.com/users/' + username + '/repos?per_page=10000&callback=?', callback);
+	// https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#list-repositories-for-a-user
+	jQuery.getJSON('https://api.github.com/users/' + username + '/repos?sort=updated&callback=?', callback);
 };
 
 jQuery.fn.loadGitHubRepositories = function(username) {
 	var myProjects = $("#content-github-my-projects");
-	var forkedProjects = $("#content-github-forked-projects");
 	
 	myProjects.html('<div class="loading loading-lg"></div>');
 	$.loadRepos(username, function(data) {
 		var repos = data.data;
-		sortByName(repos);
+		sortByUpdatedTime(repos);
 		
 		console.log(window.innerWidth);
 
 		myProjects.empty();
 		$(repos).each(function() {
 			if (!this.fork) {
-				var time = millisecondsToStr(new Date() - new Date(this.created_at));
-				var icon = getIcon(this.language, this.name);
+				var time = millisecondsToStr(new Date() - new Date(this.updated_at));
+				var icon = getIcon(this.language, this.full_name);
 				var description = getDescription(this.description, window.innerWidth);
-			
+
 				myProjects.append('<div class="gha-activity"><div class="gha-activity-icon"><span class="octicon"><img class="projicon" src="' + icon + '"></span></div><div class="gha-message"><div class="gha-time">' + time + '</div><a href="' + this.html_url + '" target="_blank">' + this.full_name + '</a><ul class="gha-commits"><li><small>' + description + '</small></li></ul></div><div class="gha-clear"></div></div>');
 			}
 		});
@@ -71,6 +71,7 @@ jQuery.fn.loadGitHubRepositories = function(username) {
 	}
 
 	function getIcon(language, name) {
+		// check language
 		if(language !== undefined && language !== null){
 			if(language.toLowerCase() === 'java') {
 				if(name !== undefined && name !== null){
@@ -86,10 +87,11 @@ jQuery.fn.loadGitHubRepositories = function(username) {
 			if(language.toLowerCase() === 'javascript') {
 				return 'assets/img/javascript-2.png';
 			}
-			if(language.toLowerCase() === 'golang') {
-				return 'assets/img/goalng-1.png';
+			if(language.toLowerCase() === 'go' || language.toLowerCase() === 'golang') {
+				return 'assets/img/golang-1.png';
 			}
 		}
+		// check name
 		if(name !== undefined && name !== null){
 			if(name.includes('spring-cloud')) {
 				return 'assets/img/spring-cloud-1.png';
@@ -103,8 +105,8 @@ jQuery.fn.loadGitHubRepositories = function(username) {
 			if(name.includes('javascript')) {
 				return 'assets/img/javascript-2.png';
 			}
-			if(name.includes('golang')) {
-				return 'assets/img/goalng-1.png';
+			if(name.includes('go-') || name.includes('golang')) {
+				return 'assets/img/golang-1.png';
 			}
 			if(name.includes('kube')) {
 				return 'assets/img/kube-2.png';
@@ -112,12 +114,25 @@ jQuery.fn.loadGitHubRepositories = function(username) {
 			if(name.includes('docker')) {
 				return 'assets/img/docker-4.png';
 			}
+			if(name.includes('bygui86')) {
+				return 'assets/img/mb-solid_logo-1.png';
+			}
 		}
 		return 'assets/img/github-3.png';
 	}
 
-	// Sort repositories by full_name
-	function sortByName(repos) {
+	function sortByUpdatedTime(repos) {
+		repos.sort( function(a, b) {
+				if (a.updated_at < b.updated_at)
+					return 1;
+				if (a.updated_at > b.updated_at)
+					return -1;
+				return 0;
+			}
+		);
+	}
+
+	function sortByFullName(repos) {
 		repos.sort( function(a, b) {
 				if (a.full_name.toLowerCase() < b.full_name.toLowerCase())
 					return -1;

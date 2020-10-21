@@ -8,6 +8,7 @@ jQuery.fn.loadGitHubRepositories = function(username) {
 	var forkedProjects = $("#content-github-forked-projects");
 	
 	myProjects.html('<div class="loading loading-lg"></div>');
+	forkedProjects.html('<div class="loading loading-lg"></div>');
 	$.loadRepos(username, function(data) {
 		var repos = data.data;
 		sortByName(repos);
@@ -15,12 +16,15 @@ jQuery.fn.loadGitHubRepositories = function(username) {
 		console.log(window.innerWidth);
 
 		myProjects.empty();
+		forkedProjects.empty();
 		$(repos).each(function() {
-			if (!this.fork) {
-				var time = millisecondsToStr(new Date() - new Date(this.created_at));
-				var icon = getIcon(this.language, this.name);
-				var description = getDescription(this.description, window.innerWidth);
-			
+			var time = millisecondsToStr(new Date() - new Date(this.created_at));
+			var icon = getIcon(this.language, this.name);
+			var description = getDescription(this.description, window.innerWidth);
+
+			if (this.fork) {
+				forkedProjects.append('<div class="gha-activity"><div class="gha-activity-icon"><span class="octicon"><img class="projicon" src="' + icon + '"></span></div><div class="gha-message"><div class="gha-time">' + time + '</div><a href="' + this.html_url + '" target="_blank">' + this.full_name + '</a><ul class="gha-commits"><li><small>' + description + '</small></li></ul></div><div class="gha-clear"></div></div>');
+			} else {
 				myProjects.append('<div class="gha-activity"><div class="gha-activity-icon"><span class="octicon"><img class="projicon" src="' + icon + '"></span></div><div class="gha-message"><div class="gha-time">' + time + '</div><a href="' + this.html_url + '" target="_blank">' + this.full_name + '</a><ul class="gha-commits"><li><small>' + description + '</small></li></ul></div><div class="gha-clear"></div></div>');
 			}
 		});
