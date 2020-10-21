@@ -59,6 +59,7 @@
 		<link rel="stylesheet" href="assets/css/spectre_0.5.3/spectre.min.css">
 		<link rel="stylesheet" href="assets/css/spectre_0.5.3/spectre-icons.min.css">
 		<link rel="stylesheet" href="assets/css/general.min.css">
+		<!-- <link rel="stylesheet" href="assets/css/bio.min.css"> -->
 		<link rel="stylesheet" href="assets/css/bio.min.css">
 		<link rel="stylesheet" href="assets/css/custom-timeline.min.css">
 	</head>
@@ -109,6 +110,48 @@
 
 		<div id="content" class="container bodycontent">
 
+			<div class="top-reduced-spacing"></div>
+
+			<div id="bio-header" class="navbar">
+				<section id="bio-header-section-left" class="navbar-section">
+					
+				</section>
+				<section id="bio-header-center" class="navbar-center">
+					<a id="bio-header-resources" href="#spacing-before-downloads" class="btn btn-link" hreflang="en">
+						<span class="header-label header-label-rounded header-label-secondary header-hover">Resources</span>
+					</a>
+					<a id="bio-header-experience" href="#spacing-before-experience" class="btn btn-link" hreflang="en">
+						<span class="header-label header-label-rounded header-label-secondary header-hover">Experience</span>
+					</a>
+					<a id="bio-header-certifications" href="#spacing-before-certifications" class="btn btn-link" hreflang="en">
+						<span class="header-label header-label-rounded header-label-secondary header-hover">Certifications</span>
+					</a>
+					<a id="bio-header-tech-stack" href="#spacing-before-tech-stack" class="btn btn-link" hreflang="en">
+						<span class="header-label header-label-rounded header-label-secondary header-hover">Tech stack</span>
+					</a>
+					<a id="bio-header-books" href="#spacing-before-books" class="btn btn-link" hreflang="en">
+						<span class="header-label header-label-rounded header-label-secondary header-hover">Inspiring books</span>
+					</a>
+					<a id="bio-header-soft-skills" href="#spacing-before-soft-skills" class="btn btn-link" hreflang="en">
+						<span class="header-label header-label-rounded header-label-secondary header-hover">Soft skills</span>
+					</a>
+					<a id="bio-header-education" href="#spacing-before-education" class="btn btn-link" hreflang="en">
+						<span class="header-label header-label-rounded header-label-secondary header-hover">Education</span>
+					</a>
+					<a id="bio-header-lang-skills" href="#spacing-before-lang-skills" class="btn btn-link" hreflang="en">
+						<span class="header-label header-label-rounded header-label-secondary header-hover">Language skills</span>
+					</a>
+					<a id="bio-header-personal" href="#spacing-before-personal" class="btn btn-link" hreflang="en">
+						<span class="header-label header-label-rounded header-label-secondary header-hover">Personal</span>
+					</a>
+				</section>
+				<section id="bio-header-section-right" class="navbar-section">
+					
+				</section>
+			</div>
+
+			<div class="bottom-reduced-spacing"></div>
+			
 			<div id="content-bio-hero-img" class="bio-hero-img"></div>
 
 			<div id="content-motivation" class="normal-width item-center top-spacing">
@@ -119,7 +162,7 @@
 				<p>Keeping this in mind, I am always available to learn something, to try alternative solutions, to suggest something different.</p>
 			</div>
 			
-			<div class="top-spacing">
+			<div id="spacing-before-downloads" class="top-spacing">
 				<div class="divider"></div>
 			</div>
 			
@@ -153,15 +196,40 @@
 				</table>
 			</div>
 
-			<div class="top-spacing">
+			<div id="spacing-before-experience" class="top-spacing">
 				<div class="divider"></div>
 			</div>
 
 			<div id="content-resume" class="top-spacing">
-				
-				<h3 class="text-center bottom-reduced-spacing">Experience</h3>
+
+				<h3 id="content-resume-experience-title" class="text-center bottom-reduced-spacing">Experience</h3>
 				<div id="content-resume-experience" class="normal-width item-center">
-					<div class="timeline timeline-left">
+					<div class="timeline timeline-right">
+						<div class="timeline-item-right">
+							<div class="timeline-content">
+								<div class="tile">
+									<div class="tile-content">
+										<p class="tile-subtitle">since Apr 2019</p>
+										<p class="tile-title">
+											Swissblock Technologies<br>Zug | Switzerland
+											<br>
+											<b>Software engineer</b>
+										</p>
+										<p class="tile-title">
+											I am responsible for the entire cloud infrastructure, deployed on Kubernetes inside the Google Cloud Platform (GCP), including all deployed systems: monitoring (e.g. Prometheus and Grafana), logging (e.g. EFK stack), databases (e.g. Apache Cassandra), brokers (e.g. Apache Kafka), security (e.g. Vault), networking (e.g. Calico) others.
+											<br>
+											I am also responsible of a development domain, mainly written in Golang.
+											<br>
+											I work constantly keeping in mind DevOps principles and best practices, without losing sight of the business goal.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="timeline-line">
+								<div class="timeline-icon icon-lg"></div>
+							</div>
+						</div>
+					</div><div class="timeline timeline-left">
 						<div class="timeline-item-left">
 							<div class="timeline-line">
 								<div class="timeline-icon icon-lg"></div>
@@ -171,12 +239,13 @@
 									<div class="tile-content">
 										<p class="tile-subtitle">since Jun 2018</p>
 										<p class="tile-title">
-											MB SOLID Consulting | Zurich | Switzerland
+											MB SOLID Consulting<br>Zurich | Switzerland
 											<br>
 											<b>Freelance Cloud Solution Architect</b>
 										</p>
 										<p class="tile-title">
 											I help my customers building innovative cloud-native solutions, well integrated with existing legacy.
+											<br>
 											I also advocate cloud-native technologies during meetups, conferences and local techy groups.
 										</p>
 									</div>
@@ -191,12 +260,13 @@
 									<div class="tile-content">
 										<p class="tile-subtitle">Dec 2016 > May 2018</p>
 										<p class="tile-title">
-											foryouandyourcustomers AG | Zurich | Switzerland
+											foryouandyourcustomers AG<br>Zurich | Switzerland
 											<br>
 											<b>Software Architect and Developer</b>
 										</p>
 										<p class="tile-title">
 											I work in close contact with customers satisfying their business requirements and realizing new technical commerce solutions. 
+											<br>
 											I keep also myself up to date on new technologies such as new architectures (microservices) and containerization.
 										</p>
 									</div>
@@ -217,7 +287,7 @@
 									<div class="tile-content">
 										<p class="tile-subtitle">Oct 2015 > Nov 2016</p>
 										<p class="tile-title">
-											webtiser AG | Zurich | Switzerland
+											webtiser AG<br>Zurich | Switzerland
 											<br>
 											<b>Technical Team Leader</b>
 										</p>
@@ -237,12 +307,13 @@
 									<div class="tile-content">
 										<p class="tile-subtitle">Mar 2014 > Sep 2015</p>
 										<p class="tile-title">
-											A.S. Watson Group Europe | Milan | Italy
+											A.S. Watson Group Europe<br>Milan | Italy
 											<br>
 											<b>hybris Senior Analyst and Developer</b>
 										</p>
 										<p class="tile-title">
 											My tasks go from approaching problems, identifying technical solutions, up to develop them.
+											<br>
 											I design and develop new complex features of project, starting from back-end arriving to expose functionalities on front-end.
 											These features are both commercial and technical. I am also working on Index Engine optimization and deploying new releases.
 										</p>
@@ -264,12 +335,13 @@
 									<div class="tile-content">
 										<p class="tile-subtitle">Mar 2012 > Feb 2014</p>
 										<p class="tile-title">
-											Techedge Group S.p.A. | Milan | Italy
+											Techedge Group S.p.A.<br>Milan | Italy
 											<br>
 											<b>hybris Consultant and Developer</b>
 										</p>
 										<p class="tile-title">
 											My tasks go from analyzing all the business requirements, up to the technical development of both the architectural system and the infrastructural one.
+											<br>
 											I work on both back-end and front-end sides, dealing with development of new modules for the communication with other third-party platforms, process management of checkout flow, 
 											catalog management and automation build process.
 										</p>
@@ -280,12 +352,18 @@
 					</div>
 				</div>
 
-				<div class="top-spacing bottom-spacing">
+				<div id="spacing-before-certifications" class="top-spacing bottom-spacing">
 					<div class="divider"></div>
 				</div>
-				
-				<h3 class="text-center bottom-reduced-spacing">Certifications</h3>
+
+				<h3 id="content-resume-certifications-title" class="text-center bottom-reduced-spacing">Certifications</h3>
 				<div id="content-resume-certifications" class="normal-width item-center text-center">
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="https://www.youracclaim.com/badges/fcde9166-2df6-481f-bd72-d1a38025989b/linked_in_profile">
+							CKAD: Certified Kubernetes Application Developer
+						</a>
+					</div>
 					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="http://bit.ly/certifications-coursera-gcp-essent-core-svc#toolbar=0">
@@ -310,12 +388,12 @@
 							Getting Started with Google Kubernetes Engine
 						</a>
 					</div>
-					<div class="reduced-spacing">
+					<!-- <div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="docs/cert-hybris.pdf#toolbar=0">
 							hybris Core Platform V5 Certification
 						</a>
-					</div>
+					</div> -->
 					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="de"
 							href="docs/cert-de-zd.png#toolbar=0">
@@ -324,11 +402,11 @@
 					</div>
 				</div>
 
-				<div class="top-spacing bottom-spacing">
+				<div id="spacing-before-tech-stack" class="top-spacing bottom-spacing">
 					<div class="divider"></div>
 				</div>
 				
-				<h3 class="text-center bottom-reduced-spacing">Technology stack</h3>
+				<h3 id="content-resume-tech-stack-title" class="text-center bottom-reduced-spacing">Technology stack</h3>
 				<div id="content-resume-tech-stack" class="reduced-width item-center text-center">
 					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
@@ -361,6 +439,10 @@
 							href="https://martinfowler.com/eaaCatalog/">
 							Design patterns
 						</a>
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="https://opensource.com/article/18/8/visualizing-devops-essentials-mindset">
+							DevOps mindset
+						</a>
 					</div>
 					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
@@ -375,6 +457,8 @@
 							href="https://martinfowler.com/articles/201701-event-driven.html">
 							Event-Driven
 						</a>
+					</div>
+					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://martinfowler.com/bliki/CQRS.html">
 							CQRS
@@ -386,12 +470,54 @@
 					</div>
 					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://java.com/en/">
-							Java
+							href="https://grafana.com/">
+							Monitoring
 						</a>
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="https://xebialabs.com/the-ultimate-devops-tool-chest/logging/">
+							Logging
+						</a>
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="http://opentracing.io/">
+							Tracing
+						</a>
+					</div>
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="https://www.docker.com/">
+							Docker
+						</a>
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="https://kubernetes.io/">
+							Kubernetes
+						</a>
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="https://cloud.google.com/">
+							GCP
+						</a>
+					</div>
+					<div class="reduced-spacing">
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="https://jenkins.io/">
+							Jenkins
+						</a>
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="https://jenkins.io/projects/jenkins-x/">
+							JenkinsX
+						</a>
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="http://kafka.apache.org/">
+							Apache Kafka
+						</a>
+					</div>
+					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://golang.org/">
 							Golang
+						</a>
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="https://java.com/en/">
+							Java
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.geeksforgeeks.org/introduction-linux-shell-shell-scripting/">
@@ -414,58 +540,56 @@
 					</div>
 					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://www.docker.com/">
-							Docker
+							href="https://maven.apache.org/">
+							Maven
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://kubernetes.io/">
-							Kubernetes
-						</a>
-						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://jenkins.io/projects/jenkins-x/">
-							JenkinsX
+							href="https://gradle.org/">
+							Gradle
 						</a>
 					</div>
 					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://grafana.com/">
-							Monitoring
+							href="https://en.wikipedia.org/wiki/SQL">
+							SQL
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="http://opentracing.io/">
-							Tracing
+							href="https://www.postgresql.org/">
+							PostgreSQL
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://xebialabs.com/the-ultimate-devops-tool-chest/logging/">
-							Logging
+							href="https://www.mysql.com/">
+							MySQL
 						</a>
-					</div>
-					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="http://kafka.apache.org/">
-							Apache Kafka
+							href="https://gorm.io/index.html">
+							GORM
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="http://hibernate.org/">
 							Hibernate
 						</a>
-						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://cx.sap.com/en/">
-							SAP Hybris
-						</a>
 					</div>
 					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="http://www.uml.org/">
-							UML
+							href="https://www.mongodb.com/nosql-explained">
+							NoSQL
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://www.w3.org/XML/">
-							XML
+							href="http://cassandra.apache.org/">
+							Cassandra
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://www.json.org/">
-							JSON
+							href="https://www.mongodb.com/">
+							MongoDB
+						</a>
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="https://redis.io/">
+							Redis
+						</a>
+						<a class="btn btn-sm" target="_blank" hreflang="en"
+							href="http://lucene.apache.org/solr/">
+							Solr
 						</a>
 					</div>
 					<div class="reduced-spacing">
@@ -490,91 +614,59 @@
 							GraphQL
 						</a>
 					</div>
-					<div class="reduced-spacing">
+					<!-- <div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://en.wikipedia.org/wiki/SQL">
-							SQL
+							href="http://www.uml.org/">
+							UML
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://www.mysql.com/">
-							MySQL
+							href="https://www.w3.org/XML/">
+							XML
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://www.postgresql.org/">
-							PostgreSQL
-						</a>
-					</div>
-					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://www.mongodb.com/nosql-explained">
-							NoSQL
+							href="https://www.json.org/">
+							JSON
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://www.mongodb.com/">
-							MongoDB
+							href="https://yaml.org/">
+							YAML
 						</a>
+					</div> -->
+					<!-- <div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="http://cassandra.apache.org/">
-							Apache Cassandra
-						</a>
-						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://redis.io/">
-							Redis
-						</a>
-						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="http://lucene.apache.org/solr/">
-							Apache Solr
-						</a>
-					</div>
-					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://maven.apache.org/">
-							Maven
-						</a>
-						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://gradle.org/">
-							Gradle
-						</a>
-						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://jenkins.io/">
-							Jenkins
-						</a>
-					</div>
-					<div class="reduced-spacing">
-						<a class="btn btn-sm" target="_blank" hreflang="en"
-							href="https://www.jetbrains.com/idea/">
-							IntelliJ IDEA
+							href="https://www.jetbrains.com/">
+							JetBrains
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://code.visualstudio.com/">
 							Visual Studio Code
 						</a>
+					</div> -->
+					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://git-scm.com/">
 							git
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://www.atlassian.com/">
-							Atlassian packages
+							Atlassian
 						</a>
-					</div>
-					<div class="reduced-spacing">
 						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://ecommerceguide.com/guides/what-is-ecommerce/">
 							eCommerce
 						</a>
 						<a class="btn btn-sm" target="_blank" hreflang="en"
 							href="https://en.wikipedia.org/wiki/Trade_exchange">
-							Trade/Exchange
+							Trading/Exchange
 						</a>
 					</div>
 				</div>
 
-				<div class="top-spacing bottom-spacing">
+				<div id="spacing-before-books" class="top-spacing bottom-spacing">
 					<div class="divider"></div>
 				</div>
 
-				<h3 class="text-center bottom-reduced-spacing">Inspiring books</h3>
+				<h3 id="content-resume-books-title" class="text-center bottom-reduced-spacing">Inspiring books</h3>
 				<div id="content-resume-inspiring-books" class="columns bottom-reduced-spacing item-center">
 					<div id="content-resume-inspiring-books-design-patterns" class="column col-4">
 						<div class="card shadow">
@@ -611,11 +703,11 @@
 					</div>
 				</div>
 
-				<div class="top-spacing bottom-spacing">
+				<div id="spacing-before-soft-skills" class="top-spacing bottom-spacing">
 					<div class="divider"></div>
 				</div>
 
-				<h3 class="text-center bottom-reduced-spacing">Soft skills</h3>
+				<h3 id="content-resume-soft-skills-title" class="text-center bottom-reduced-spacing">Soft skills</h3>
 				<div id="content-resume-soft-skills" class="normal-width item-center">
 					<p>Excellent willing and enthusiasm to know and explore new technologies.</p>
 					<p>Ability to relate effectively to colleagues and customers, to work in team, in environments where the communication is essential.</p>
@@ -623,11 +715,11 @@
 					<p>Leadership and decision-making capacity in critical situations. Expertise in various fields of Computer Sciences: software design, development, reverse engineering, dev ops. These knowledges have been extended also in personal experience on different projects.</p>
 				</div>
 
-				<div class="top-spacing bottom-spacing">
+				<div id="spacing-before-education" class="top-spacing bottom-spacing">
 					<div class="divider"></div>
 				</div>
 
-				<h3 class="text-center bottom-reduced-spacing">Education</h3>
+				<h3 id="content-resume-education-title" class="text-center bottom-reduced-spacing">Education</h3>
 				<div id="content-resume-education" class="normal-width item-center">
 					<div class="timeline timeline-left">
 						<div class="timeline-item-left">
@@ -679,11 +771,11 @@
 					</div>
 				</div>
 
-				<div class="top-spacing bottom-spacing">
+				<div id="spacing-before-lang-skills" class="top-spacing bottom-spacing">
 					<div class="divider"></div>
 				</div>
 
-				<h3 class="text-center bottom-reduced-spacing">Language skills</h3>
+				<h3 id="content-resume-lang-skills-title" class="text-center bottom-reduced-spacing">Language skills</h3>
 				<div id="content-resume-lang-skills" class="reduced-width item-center">
 					<table class="table table-striped text-center">
 						<thead>
@@ -718,11 +810,11 @@
 					</table>
 				</div>
 
-				<div class="top-spacing bottom-spacing">
+				<div id="spacing-before-personal" class="top-spacing bottom-spacing">
 					<div class="divider"></div>
 				</div>
 	
-				<h3 class="text-center bottom-reduced-spacing">Personal</h3>
+				<h3 id="content-resume-personal-title" class="text-center bottom-reduced-spacing">Personal</h3>
 				<div id="content-resume-personal-info" class="columns">
 					<div id="content-resume-personal-info-left" class="column text-right">
 						Nationality
